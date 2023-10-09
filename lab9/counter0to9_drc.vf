@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : counter0to9_drc.vf
-// /___/   /\     Timestamp : 09/23/2023 00:47:40
+// /___/   /\     Timestamp : 10/09/2023 17:25:15
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: D:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog counter0to9_drc.vf -w "E:/ISE project/lab9/counter0to9.sch"
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog counter0to9_drc.vf -w C:/Users/admin/Documents/GitHub/circuit_year_1_st/lab9/counter0to9.sch
 //Design Name: counter0to9
 //Device: spartan6
 //Purpose:

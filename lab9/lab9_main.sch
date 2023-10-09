@@ -35,7 +35,6 @@
         <signal name="XLXN_16" />
         <signal name="XLXN_17" />
         <signal name="XLXN_18" />
-        <signal name="XLXN_12" />
         <signal name="PB2_P46" />
         <signal name="XLXN_35" />
         <signal name="PB1_P45" />
@@ -64,7 +63,6 @@
         <signal name="com0_P44" />
         <signal name="XLXN_101" />
         <signal name="PB3_P47" />
-        <signal name="XLXN_103" />
         <signal name="XLXN_107" />
         <port polarity="Input" name="sl_sw_7_p55" />
         <port polarity="Input" name="sl_sw_6_P56" />
@@ -145,7 +143,7 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="counter0to9">
-            <timestamp>2023-9-22T17:47:59</timestamp>
+            <timestamp>2023-10-9T10:25:21</timestamp>
             <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
             <line x2="384" y1="-224" y2="-224" x1="320" />

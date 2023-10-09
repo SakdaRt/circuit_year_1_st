@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="counter0to9">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2023-9-22T17:47:59</timestamp>
+    <timestamp>2023-10-9T10:25:21</timestamp>
     <pin polarity="Input" x="0" y="-224" name="vrclk_P123" />
     <pin polarity="Input" x="0" y="32" name="PB3_P47" />
     <pin polarity="Output" x="384" y="-224" name="binary0" />

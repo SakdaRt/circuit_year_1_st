@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-10-09T14:05:54</DateModified>
+  <DateModified>2023-10-09T17:22:54</DateModified>
   <ModuleName>binary_4_bit_to_7_segment_1_digit</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/admin/Desktop/Sakda/Circuit/test/binary_4_bit_to_7_segment_1_digit/iseconfig/binary_4_bit_to_7_segment_1_digit.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/admin/Desktop/Sakda/Circuit/test/binary_4_bit_to_7_segment_1_digit\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/admin/Documents/GitHub/circuit_year_1_st/test/binary_4_bit_to_7_segment_1_digit/iseconfig/binary_4_bit_to_7_segment_1_digit.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/admin/Documents/GitHub/circuit_year_1_st/test/binary_4_bit_to_7_segment_1_digit\</ImplementationReportsDirectory>
   <DateInitialized>2023-10-07T15:46:22</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

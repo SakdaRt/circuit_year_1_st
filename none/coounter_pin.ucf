@@ -1,0 +1,9 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "binary0" LOC = P1;
+NET "binary1" LOC = P2;
+NET "binary2" LOC = P5;
+NET "binary3" LOC = P6;
+NET "PB3_P47" LOC = P47;
+NET "vrclk_P123" LOC = P123;

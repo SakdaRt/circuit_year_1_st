@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym demux C:/Users/admin/Documents/GitHub/circuit_year_1_st/lab9/demux.sch C:/Users/admin/Documents/GitHub/circuit_year_1_st/none/demux.sym 
