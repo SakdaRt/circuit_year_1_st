@@ -1,0 +1,297 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : counter0to9.vf
+// /___/   /\     Timestamp : 09/23/2023 00:44:04
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "E:/ISE project/lab9/counter0to9.vf" -w "E:/ISE project/lab9/counter0to9.sch"
+//Design Name: counter0to9
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKCE_HXILINX_counter0to9(Q, C, CE, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(CE)
+        begin
+          if(!J)
+          begin
+            if(K)
+            Q <= 1'b0;
+          end
+          else
+          begin
+            if(!K)
+            Q <= 1'b1;
+            else 
+            Q <= !Q;
+          end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module counter0to9(PB3_P47, 
+                   vrclk_P123, 
+                   binary0, 
+                   binary1, 
+                   binary2, 
+                   binary3);
+
+    input PB3_P47;
+    input vrclk_P123;
+   output binary0;
+   output binary1;
+   output binary2;
+   output binary3;
+   
+   wire XLXN_495;
+   wire XLXN_496;
+   wire XLXN_504;
+   wire XLXN_505;
+   wire XLXN_511;
+   wire XLXN_512;
+   wire XLXN_516;
+   wire XLXN_517;
+   wire XLXN_521;
+   wire XLXN_522;
+   wire XLXN_523;
+   wire XLXN_524;
+   wire XLXN_525;
+   wire XLXN_526;
+   wire XLXN_527;
+   wire XLXN_528;
+   wire XLXN_529;
+   wire XLXN_530;
+   wire XLXN_531;
+   wire XLXN_539;
+   wire XLXN_540;
+   wire XLXN_541;
+   wire XLXN_542;
+   wire XLXN_543;
+   wire XLXN_545;
+   wire XLXN_554;
+   wire XLXN_567;
+   wire XLXN_568;
+   wire XLXN_569;
+   wire XLXN_570;
+   wire XLXN_571;
+   wire XLXN_572;
+   wire XLXN_573;
+   wire XLXN_574;
+   wire XLXN_575;
+   wire XLXN_576;
+   wire XLXN_577;
+   wire XLXN_578;
+   wire XLXN_579;
+   wire XLXN_580;
+   wire XLXN_583;
+   wire XLXN_588;
+   wire XLXN_589;
+   wire XLXN_590;
+   wire XLXN_591;
+   wire XLXN_594;
+   wire XLXN_598;
+   wire XLXN_602;
+   wire XLXN_605;
+   wire XLXN_612;
+   wire binary0_DUMMY;
+   wire binary1_DUMMY;
+   wire binary2_DUMMY;
+   wire binary3_DUMMY;
+   
+   assign binary0 = binary0_DUMMY;
+   assign binary1 = binary1_DUMMY;
+   assign binary2 = binary2_DUMMY;
+   assign binary3 = binary3_DUMMY;
+   FD #( .INIT(1'b0) ) XLXI_701 (.C(XLXN_496), 
+                .D(XLXN_495), 
+                .Q(XLXN_590));
+   INV  XLXI_702 (.I(XLXN_590), 
+                 .O(XLXN_495));
+   FD #( .INIT(1'b0) ) XLXI_703 (.C(XLXN_512), 
+                .D(XLXN_504), 
+                .Q(XLXN_496));
+   FD #( .INIT(1'b0) ) XLXI_704 (.C(XLXN_512), 
+                .D(XLXN_505), 
+                .Q(XLXN_504));
+   FD #( .INIT(1'b0) ) XLXI_705 (.C(XLXN_512), 
+                .D(XLXN_511), 
+                .Q(XLXN_505));
+   INV  XLXI_706 (.I(XLXN_496), 
+                 .O(XLXN_517));
+   FD #( .INIT(1'b0) ) XLXI_707 (.C(XLXN_512), 
+                .D(XLXN_516), 
+                .Q(XLXN_511));
+   FD #( .INIT(1'b0) ) XLXI_708 (.C(XLXN_512), 
+                .D(XLXN_517), 
+                .Q(XLXN_516));
+   INV  XLXI_709 (.I(XLXN_512), 
+                 .O(XLXN_525));
+   FD #( .INIT(1'b0) ) XLXI_711 (.C(XLXN_526), 
+                .D(XLXN_521), 
+                .Q(XLXN_512));
+   FD #( .INIT(1'b0) ) XLXI_712 (.C(XLXN_526), 
+                .D(XLXN_522), 
+                .Q(XLXN_521));
+   FD #( .INIT(1'b0) ) XLXI_713 (.C(XLXN_526), 
+                .D(XLXN_523), 
+                .Q(XLXN_522));
+   FD #( .INIT(1'b0) ) XLXI_714 (.C(XLXN_526), 
+                .D(XLXN_524), 
+                .Q(XLXN_523));
+   FD #( .INIT(1'b0) ) XLXI_715 (.C(XLXN_526), 
+                .D(XLXN_525), 
+                .Q(XLXN_524));
+   FD #( .INIT(1'b0) ) XLXI_716 (.C(XLXN_539), 
+                .D(XLXN_531), 
+                .Q(XLXN_527));
+   FD #( .INIT(1'b0) ) XLXI_717 (.C(XLXN_539), 
+                .D(XLXN_527), 
+                .Q(XLXN_528));
+   FD #( .INIT(1'b0) ) XLXI_718 (.C(XLXN_539), 
+                .D(XLXN_528), 
+                .Q(XLXN_529));
+   FD #( .INIT(1'b0) ) XLXI_719 (.C(XLXN_539), 
+                .D(XLXN_529), 
+                .Q(XLXN_530));
+   FD #( .INIT(1'b0) ) XLXI_720 (.C(XLXN_539), 
+                .D(XLXN_530), 
+                .Q(XLXN_526));
+   INV  XLXI_721 (.I(XLXN_526), 
+                 .O(XLXN_531));
+   FD #( .INIT(1'b0) ) XLXI_727 (.C(XLXN_554), 
+                .D(XLXN_540), 
+                .Q(XLXN_539));
+   FD #( .INIT(1'b0) ) XLXI_728 (.C(XLXN_554), 
+                .D(XLXN_541), 
+                .Q(XLXN_540));
+   FD #( .INIT(1'b0) ) XLXI_729 (.C(XLXN_554), 
+                .D(XLXN_542), 
+                .Q(XLXN_541));
+   FD #( .INIT(1'b0) ) XLXI_730 (.C(XLXN_554), 
+                .D(XLXN_543), 
+                .Q(XLXN_542));
+   FD #( .INIT(1'b0) ) XLXI_731 (.C(XLXN_554), 
+                .D(XLXN_545), 
+                .Q(XLXN_543));
+   INV  XLXI_732 (.I(XLXN_539), 
+                 .O(XLXN_545));
+   FD #( .INIT(1'b0) ) XLXI_757 (.C(XLXN_580), 
+                .D(XLXN_579), 
+                .Q(XLXN_568));
+   FD #( .INIT(1'b0) ) XLXI_758 (.C(XLXN_580), 
+                .D(XLXN_568), 
+                .Q(XLXN_569));
+   FD #( .INIT(1'b0) ) XLXI_759 (.C(XLXN_580), 
+                .D(XLXN_569), 
+                .Q(XLXN_567));
+   FD #( .INIT(1'b0) ) XLXI_760 (.C(XLXN_580), 
+                .D(XLXN_567), 
+                .Q(XLXN_570));
+   FD #( .INIT(1'b0) ) XLXI_761 (.C(XLXN_580), 
+                .D(XLXN_570), 
+                .Q(XLXN_554));
+   INV  XLXI_762 (.I(XLXN_554), 
+                 .O(XLXN_579));
+   INV  XLXI_763 (.I(XLXN_580), 
+                 .O(XLXN_583));
+   FD #( .INIT(1'b0) ) XLXI_764 (.C(XLXN_588), 
+                .D(XLXN_571), 
+                .Q(XLXN_572));
+   FD #( .INIT(1'b0) ) XLXI_765 (.C(XLXN_588), 
+                .D(XLXN_583), 
+                .Q(XLXN_571));
+   FD #( .INIT(1'b0) ) XLXI_766 (.C(XLXN_588), 
+                .D(XLXN_572), 
+                .Q(XLXN_573));
+   FD #( .INIT(1'b0) ) XLXI_767 (.C(XLXN_588), 
+                .D(XLXN_573), 
+                .Q(XLXN_574));
+   FD #( .INIT(1'b0) ) XLXI_768 (.C(XLXN_588), 
+                .D(XLXN_574), 
+                .Q(XLXN_580));
+   FD #( .INIT(1'b0) ) XLXI_769 (.C(vrclk_P123), 
+                .D(XLXN_589), 
+                .Q(XLXN_575));
+   FD #( .INIT(1'b0) ) XLXI_770 (.C(vrclk_P123), 
+                .D(XLXN_575), 
+                .Q(XLXN_576));
+   FD #( .INIT(1'b0) ) XLXI_771 (.C(vrclk_P123), 
+                .D(XLXN_576), 
+                .Q(XLXN_577));
+   INV  XLXI_772 (.I(XLXN_588), 
+                 .O(XLXN_589));
+   FD #( .INIT(1'b0) ) XLXI_773 (.C(vrclk_P123), 
+                .D(XLXN_577), 
+                .Q(XLXN_578));
+   FD #( .INIT(1'b0) ) XLXI_774 (.C(vrclk_P123), 
+                .D(XLXN_578), 
+                .Q(XLXN_588));
+   INV  XLXI_784 (.I(XLXN_590), 
+                 .O(XLXN_591));
+   INV  XLXI_785 (.I(binary0_DUMMY), 
+                 .O(XLXN_594));
+   INV  XLXI_786 (.I(binary1_DUMMY), 
+                 .O(XLXN_598));
+   INV  XLXI_790 (.I(binary2_DUMMY), 
+                 .O(XLXN_602));
+   AND2  XLXI_794 (.I0(binary3_DUMMY), 
+                  .I1(binary0_DUMMY), 
+                  .O(XLXN_605));
+   VCC  XLXI_795 (.P(XLXN_612));
+   (* HU_SET = "XLXI_803_0" *) 
+   FJKCE_HXILINX_counter0to9  XLXI_803 (.C(XLXN_591), 
+                                       .CE(PB3_P47), 
+                                       .CLR(XLXN_605), 
+                                       .J(XLXN_612), 
+                                       .K(XLXN_612), 
+                                       .Q(binary0_DUMMY));
+   (* HU_SET = "XLXI_804_1" *) 
+   FJKCE_HXILINX_counter0to9  XLXI_804 (.C(XLXN_594), 
+                                       .CE(PB3_P47), 
+                                       .CLR(XLXN_605), 
+                                       .J(XLXN_612), 
+                                       .K(XLXN_612), 
+                                       .Q(binary1_DUMMY));
+   (* HU_SET = "XLXI_805_2" *) 
+   FJKCE_HXILINX_counter0to9  XLXI_805 (.C(XLXN_598), 
+                                       .CE(PB3_P47), 
+                                       .CLR(XLXN_605), 
+                                       .J(XLXN_612), 
+                                       .K(XLXN_612), 
+                                       .Q(binary2_DUMMY));
+   (* HU_SET = "XLXI_806_3" *) 
+   FJKCE_HXILINX_counter0to9  XLXI_806 (.C(XLXN_602), 
+                                       .CE(PB3_P47), 
+                                       .CLR(XLXN_605), 
+                                       .J(XLXN_612), 
+                                       .K(XLXN_612), 
+                                       .Q(binary3_DUMMY));
+endmodule

@@ -1,0 +1,82 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml binary_4_bit_to_7_segment_1_digit.twx
+binary_4_bit_to_7_segment_1_digit.ncd -o binary_4_bit_to_7_segment_1_digit.twr
+binary_4_bit_to_7_segment_1_digit.pcf -ucf
+binary_4_bit_to_7_segment_1_digit.ucf
+
+Design file:              binary_4_bit_to_7_segment_1_digit.ncd
+Physical constraint file: binary_4_bit_to_7_segment_1_digit.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+sw0_p66        |out_a_p41      |    7.649|
+sw0_p66        |out_b_p40      |    7.881|
+sw0_p66        |out_c_p35      |    7.356|
+sw0_p66        |out_d_p34      |    7.321|
+sw0_p66        |out_e_p32      |    7.740|
+sw0_p66        |out_f_p29      |    8.143|
+sw0_p66        |out_g_p27      |    8.386|
+sw1_p62        |out_a_p41      |    7.537|
+sw1_p62        |out_b_p40      |    7.618|
+sw1_p62        |out_c_p35      |    7.260|
+sw1_p62        |out_d_p34      |    7.381|
+sw1_p62        |out_e_p32      |    7.652|
+sw1_p62        |out_f_p29      |    8.506|
+sw1_p62        |out_g_p27      |    8.432|
+sw2_p61        |out_a_p41      |    7.811|
+sw2_p61        |out_b_p40      |    7.579|
+sw2_p61        |out_c_p35      |    7.306|
+sw2_p61        |out_d_p34      |    7.477|
+sw2_p61        |out_e_p32      |    7.866|
+sw2_p61        |out_f_p29      |    8.467|
+sw2_p61        |out_g_p27      |    8.968|
+sw3_p59        |out_a_p41      |    7.490|
+sw3_p59        |out_b_p40      |    7.657|
+sw3_p59        |out_c_p35      |    7.320|
+sw3_p59        |out_d_p34      |    7.192|
+sw3_p59        |out_e_p32      |    7.590|
+sw3_p59        |out_f_p29      |    8.306|
+sw3_p59        |out_g_p27      |    8.318|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Oct 07 17:00:55 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4572 MB
+
+
+

@@ -1,0 +1,13 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Sep 23 00:44:20 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "vrclk_P123" LOCATE = SITE "P123" LEVEL 1;
+COMP "binary0" LOCATE = SITE "P82" LEVEL 1;
+COMP "binary1" LOCATE = SITE "P81" LEVEL 1;
+COMP "binary2" LOCATE = SITE "P80" LEVEL 1;
+COMP "binary3" LOCATE = SITE "P79" LEVEL 1;
+COMP "PB3_P47" LOCATE = SITE "P47" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="slide_sw0_p66" Dir="IN"/>
+		<Port Id="slide_sw1_p62" Dir="IN"/>
+		<Port Id="led0_digit0_p82" Dir="OUT"/>
+		<Port Id="led1_digit1_p81" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

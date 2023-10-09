@@ -1,0 +1,73 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n 3
+-fastpaths -xml lab9_201_runner.twx lab9_201_runner.ncd -o lab9_201_runner.twr
+lab9_201_runner.pcf -ucf lab9_201_runner.ucf
+
+Design file:              lab9_201_runner.ncd
+Physical constraint file: lab9_201_runner.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+sl_sw_0_P66    |binary0        |    8.751|
+sl_sw_1_P62    |binary0        |    8.652|
+sl_sw_1_P62    |binary1        |    8.638|
+sl_sw_2_P61    |binary0        |    8.402|
+sl_sw_2_P61    |binary1        |    8.660|
+sl_sw_3_P59    |binary0        |    8.373|
+sl_sw_3_P59    |binary1        |    8.756|
+sl_sw_3_P59    |binary2        |    7.304|
+sl_sw_4_P58    |binary0        |    8.002|
+sl_sw_4_P58    |binary1        |    8.570|
+sl_sw_4_P58    |binary2        |    7.562|
+sl_sw_5_P57    |binary0        |    8.170|
+sl_sw_5_P57    |binary1        |    7.767|
+sl_sw_5_P57    |binary2        |    7.536|
+sl_sw_6_P56    |binary0        |    7.749|
+sl_sw_6_P56    |binary1        |    8.031|
+sl_sw_6_P56    |binary2        |    8.006|
+sl_sw_7_P55    |binary0        |    8.856|
+sl_sw_7_P55    |binary1        |    8.841|
+sl_sw_7_P55    |binary2        |    7.995|
+sl_sw_7_P55    |binary3        |    7.620|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Sep 22 18:35:05 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4571 MB
+
+
+

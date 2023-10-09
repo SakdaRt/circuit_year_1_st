@@ -1,0 +1,56 @@
+xst -intstyle ise -ifn "E:/ISE project/lab9/lab9_main.xst" -ofn "E:/ISE project/lab9/lab9_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 "lab9_main.ngc" lab9_main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_main_map.ncd lab9_main.ngd lab9_main.pcf 
+par -w -intstyle ise -ol high -mt off lab9_main_map.ncd lab9_main.ncd lab9_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9_main.twx lab9_main.ncd -o lab9_main.twr lab9_main.pcf 
+bitgen -intstyle ise -f lab9_main.ut lab9_main.ncd 
+xst -intstyle ise -ifn "E:/ISE project/lab9/lab9_main.xst" -ofn "E:/ISE project/lab9/lab9_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9_main.ucf -p xc6slx9-tqg144-3 "lab9_main.ngc" lab9_main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_main_map.ncd lab9_main.ngd lab9_main.pcf 
+par -w -intstyle ise -ol high -mt off lab9_main_map.ncd lab9_main.ncd lab9_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9_main.twx lab9_main.ncd -o lab9_main.twr lab9_main.pcf -ucf lab9_main.ucf 
+bitgen -intstyle ise -f lab9_main.ut lab9_main.ncd 
+xst -intstyle ise -ifn "E:/ISE project/lab9/lab9_main.xst" -ofn "E:/ISE project/lab9/lab9_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9_main.ucf -p xc6slx9-tqg144-3 "lab9_main.ngc" lab9_main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_main_map.ncd lab9_main.ngd lab9_main.pcf 
+par -w -intstyle ise -ol high -mt off lab9_main_map.ncd lab9_main.ncd lab9_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9_main.twx lab9_main.ncd -o lab9_main.twr lab9_main.pcf -ucf lab9_main.ucf 
+bitgen -intstyle ise -f lab9_main.ut lab9_main.ncd 
+xst -intstyle ise -ifn "E:/ISE project/lab9/lab9_main.xst" -ofn "E:/ISE project/lab9/lab9_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9_main.ucf -p xc6slx9-tqg144-3 "lab9_main.ngc" lab9_main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_main_map.ncd lab9_main.ngd lab9_main.pcf 
+par -w -intstyle ise -ol high -mt off lab9_main_map.ncd lab9_main.ncd lab9_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9_main.twx lab9_main.ncd -o lab9_main.twr lab9_main.pcf -ucf lab9_main.ucf 
+bitgen -intstyle ise -f lab9_main.ut lab9_main.ncd 
+xst -intstyle ise -ifn "E:/ISE project/lab9/lab9_main.xst" -ofn "E:/ISE project/lab9/lab9_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9_main.ucf -p xc6slx9-tqg144-3 "lab9_main.ngc" lab9_main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_main_map.ncd lab9_main.ngd lab9_main.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9_main.ucf -p xc6slx9-tqg144-3 "lab9_main.ngc" lab9_main.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9_main.ucf -p xc6slx9-tqg144-3 "lab9_main.ngc" lab9_main.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9_main.ucf -p xc6slx9-tqg144-3 "lab9_main.ngc" lab9_main.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9_main.ucf -p xc6slx9-tqg144-3 "lab9_main.ngc" lab9_main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_main_map.ncd lab9_main.ngd lab9_main.pcf 
+par -w -intstyle ise -ol high -mt off lab9_main_map.ncd lab9_main.ncd lab9_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9_main.twx lab9_main.ncd -o lab9_main.twr lab9_main.pcf -ucf lab9_main.ucf 
+bitgen -intstyle ise -f lab9_main.ut lab9_main.ncd 
+xst -intstyle ise -ifn "E:/ISE project/lab9/lab9_main.xst" -ofn "E:/ISE project/lab9/lab9_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9_main.ucf -p xc6slx9-tqg144-3 "lab9_main.ngc" lab9_main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_main_map.ncd lab9_main.ngd lab9_main.pcf 
+par -w -intstyle ise -ol high -mt off lab9_main_map.ncd lab9_main.ncd lab9_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9_main.twx lab9_main.ncd -o lab9_main.twr lab9_main.pcf -ucf lab9_main.ucf 
+bitgen -intstyle ise -f lab9_main.ut lab9_main.ncd 
+xst -intstyle ise -ifn "E:/ISE project/lab9/lab9_main.xst" -ofn "E:/ISE project/lab9/lab9_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9_main.ucf -p xc6slx9-tqg144-3 "lab9_main.ngc" lab9_main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_main_map.ncd lab9_main.ngd lab9_main.pcf 
+par -w -intstyle ise -ol high -mt off lab9_main_map.ncd lab9_main.ncd lab9_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9_main.twx lab9_main.ncd -o lab9_main.twr lab9_main.pcf -ucf lab9_main.ucf 
+bitgen -intstyle ise -f lab9_main.ut lab9_main.ncd 
+xst -intstyle ise -ifn "C:/Users/admin/Desktop/Sakda/Circuit/lab9/lab9_main.xst" -ofn "C:/Users/admin/Desktop/Sakda/Circuit/lab9/lab9_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9_main.ucf -p xc6slx9-tqg144-3 lab9_main.ngc lab9_main.ngd  
+xst -intstyle ise -ifn "C:/Users/admin/Desktop/Sakda/Circuit/lab9/lab9_main.xst" -ofn "C:/Users/admin/Desktop/Sakda/Circuit/lab9/lab9_main.syr" 
+xst -intstyle ise -ifn "C:/Users/admin/Desktop/Sakda/Circuit/lab9/lab9_main.xst" -ofn "C:/Users/admin/Desktop/Sakda/Circuit/lab9/lab9_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9_main.ucf -p xc6slx9-tqg144-3 lab9_main.ngc lab9_main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_main_map.ncd lab9_main.ngd lab9_main.pcf 
+par -w -intstyle ise -ol high -mt off lab9_main_map.ncd lab9_main.ncd lab9_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9_main.twx lab9_main.ncd -o lab9_main.twr lab9_main.pcf -ucf lab9_main.ucf 
+bitgen -intstyle ise -f lab9_main.ut lab9_main.ncd 

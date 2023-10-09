@@ -1,0 +1,16 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "com0" LOC = P44;
+NET "com1" LOC = P43;
+NET "com2" LOC = P33;
+NET "com3" LOC = P30;
+NET "mn0" LOC = P95;
+NET "out_a" LOC = P41;
+NET "out_b" LOC = P40;
+NET "out_c" LOC = P35;
+NET "out_d" LOC = P34;
+NET "out_e" LOC = P32;
+NET "out_f" LOC = P29;
+NET "pb1" LOC = P45;
+NET "sw0" LOC = P66;

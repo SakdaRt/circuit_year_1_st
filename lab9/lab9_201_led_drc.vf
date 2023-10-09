@@ -1,0 +1,177 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : lab9_201_led_drc.vf
+// /___/   /\     Timestamp : 09/22/2023 18:08:18
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: D:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog lab9_201_led_drc.vf -w "E:/ISE project/lab9/lab9_201_led.sch"
+//Design Name: lab9_201_led
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module lab9_201_led(binary0, 
+                    binary1, 
+                    binary2, 
+                    binary3, 
+                    led0_P82, 
+                    led1_P81, 
+                    led2_P80, 
+                    led3_P79, 
+                    led4_P78, 
+                    led5_P75, 
+                    led6_P74, 
+                    led7_P67);
+
+    input binary0;
+    input binary1;
+    input binary2;
+    input binary3;
+   output led0_P82;
+   output led1_P81;
+   output led2_P80;
+   output led3_P79;
+   output led4_P78;
+   output led5_P75;
+   output led6_P74;
+   output led7_P67;
+   
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_15;
+   wire XLXN_16;
+   wire XLXN_17;
+   wire XLXN_19;
+   wire XLXN_20;
+   wire XLXN_21;
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_25;
+   wire XLXN_26;
+   
+   AND4B3  XLXI_1 (.I0(binary0), 
+                  .I1(binary1), 
+                  .I2(binary2), 
+                  .I3(binary3), 
+                  .O(led7_P67));
+   AND4B1  XLXI_2 (.I0(binary3), 
+                  .I1(binary2), 
+                  .I2(binary1), 
+                  .I3(binary0), 
+                  .O(XLXN_2));
+   AND4B3  XLXI_3 (.I0(binary0), 
+                  .I1(binary1), 
+                  .I2(binary2), 
+                  .I3(binary3), 
+                  .O(XLXN_3));
+   OR2  XLXI_4 (.I0(XLXN_3), 
+               .I1(XLXN_2), 
+               .O(led6_P74));
+   AND3B1  XLXI_5 (.I0(binary3), 
+                  .I1(binary2), 
+                  .I2(binary1), 
+                  .O(XLXN_5));
+   AND4B3  XLXI_6 (.I0(binary0), 
+                  .I1(binary1), 
+                  .I2(binary2), 
+                  .I3(binary3), 
+                  .O(XLXN_6));
+   OR2  XLXI_7 (.I0(XLXN_6), 
+               .I1(XLXN_5), 
+               .O(led5_P75));
+   AND3B1  XLXI_8 (.I0(binary3), 
+                  .I1(binary2), 
+                  .I2(binary0), 
+                  .O(XLXN_8));
+   AND3B1  XLXI_9 (.I0(binary3), 
+                  .I1(binary2), 
+                  .I2(binary1), 
+                  .O(XLXN_9));
+   AND4B3  XLXI_10 (.I0(binary0), 
+                   .I1(binary1), 
+                   .I2(binary2), 
+                   .I3(binary3), 
+                   .O(XLXN_10));
+   OR3  XLXI_11 (.I0(XLXN_10), 
+                .I1(XLXN_9), 
+                .I2(XLXN_8), 
+                .O(led4_P78));
+   AND2B1  XLXI_12 (.I0(binary3), 
+                   .I1(binary2), 
+                   .O(XLXN_12));
+   AND4B3  XLXI_13 (.I0(binary0), 
+                   .I1(binary1), 
+                   .I2(binary2), 
+                   .I3(binary3), 
+                   .O(XLXN_13));
+   OR2  XLXI_14 (.I0(XLXN_13), 
+                .I1(XLXN_12), 
+                .O(led3_P79));
+   AND3B1  XLXI_15 (.I0(binary3), 
+                   .I1(binary1), 
+                   .I2(binary0), 
+                   .O(XLXN_17));
+   AND2B1  XLXI_16 (.I0(binary3), 
+                   .I1(binary2), 
+                   .O(XLXN_15));
+   AND4B3  XLXI_17 (.I0(binary0), 
+                   .I1(binary1), 
+                   .I2(binary2), 
+                   .I3(binary3), 
+                   .O(XLXN_16));
+   OR3  XLXI_18 (.I0(XLXN_16), 
+                .I1(XLXN_15), 
+                .I2(XLXN_17), 
+                .O(led2_P80));
+   AND2B1  XLXI_19 (.I0(binary3), 
+                   .I1(binary1), 
+                   .O(XLXN_20));
+   AND2B1  XLXI_20 (.I0(binary3), 
+                   .I1(binary2), 
+                   .O(XLXN_19));
+   AND4B3  XLXI_21 (.I0(binary0), 
+                   .I1(binary1), 
+                   .I2(binary2), 
+                   .I3(binary3), 
+                   .O(XLXN_21));
+   OR3  XLXI_22 (.I0(XLXN_21), 
+                .I1(XLXN_19), 
+                .I2(XLXN_20), 
+                .O(led1_P81));
+   AND2B1  XLXI_23 (.I0(binary3), 
+                   .I1(binary1), 
+                   .O(XLXN_23));
+   AND2B1  XLXI_24 (.I0(binary3), 
+                   .I1(binary0), 
+                   .O(XLXN_24));
+   AND2B1  XLXI_25 (.I0(binary3), 
+                   .I1(binary2), 
+                   .O(XLXN_25));
+   AND4B3  XLXI_26 (.I0(binary0), 
+                   .I1(binary1), 
+                   .I2(binary2), 
+                   .I3(binary3), 
+                   .O(XLXN_26));
+   OR4  XLXI_28 (.I0(XLXN_26), 
+                .I1(XLXN_25), 
+                .I2(XLXN_24), 
+                .I3(XLXN_23), 
+                .O(led0_P82));
+endmodule

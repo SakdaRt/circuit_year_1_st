@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="lab9_201_runner">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2023-9-22T11:8:33</timestamp>
+    <pin polarity="Input" x="0" y="-480" name="sl_sw_7_P55" />
+    <pin polarity="Input" x="0" y="-416" name="sl_sw_6_P56" />
+    <pin polarity="Input" x="0" y="-352" name="sl_sw_5_P57" />
+    <pin polarity="Input" x="0" y="-288" name="sl_sw_4_P58" />
+    <pin polarity="Input" x="0" y="-224" name="sl_sw_3_P59" />
+    <pin polarity="Input" x="0" y="-160" name="sl_sw_2_P61" />
+    <pin polarity="Input" x="0" y="-96" name="sl_sw_1_P62" />
+    <pin polarity="Input" x="0" y="-32" name="sl_sw_0_P66" />
+    <pin polarity="Output" x="384" y="-480" name="binary3" />
+    <pin polarity="Output" x="384" y="-336" name="binary2" />
+    <pin polarity="Output" x="384" y="-192" name="binary1" />
+    <pin polarity="Output" x="384" y="-48" name="binary0" />
+    <graph>
+        <rect width="256" x="64" y="-512" height="512" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-520" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin sl_sw_7_P55" />
+        <line x2="0" y1="-480" y2="-480" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin sl_sw_6_P56" />
+        <line x2="0" y1="-416" y2="-416" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin sl_sw_5_P57" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin sl_sw_4_P58" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin sl_sw_3_P59" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin sl_sw_2_P61" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin sl_sw_1_P62" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin sl_sw_0_P66" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-480" type="pin binary3" />
+        <line x2="384" y1="-480" y2="-480" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-336" type="pin binary2" />
+        <line x2="384" y1="-336" y2="-336" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-192" type="pin binary1" />
+        <line x2="384" y1="-192" y2="-192" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-48" type="pin binary0" />
+        <line x2="384" y1="-48" y2="-48" x1="320" />
+    </graph>
+</symbol>

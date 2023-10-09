@@ -1,0 +1,41 @@
+
+
+NET "sl_sw_0_P66" LOC = P66;
+NET "sl_sw_1_P62" LOC = P62;
+NET "sl_sw_2_P61" LOC = P61;
+NET "sl_sw_3_P59" LOC = P59;
+NET "sl_sw_4_P58" LOC = P58;
+NET "sl_sw_5_P57" LOC = P57;
+NET "sl_sw_6_P56" LOC = P56;
+NET "sl_sw_7_P55" LOC = P55;
+
+NET "vrclk_P123" LOC = P123;
+
+NET "PB1_P45" LOC = P45;
+NET "PB1_P45" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "PB2_P46" LOC = P46;
+NET "PB2_P46" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "PB3_P47" LOC = P47;
+
+NET "led0_P82" LOC = P82;
+NET "led1_P81" LOC = P81;
+NET "led2_P80" LOC = P80;
+NET "led3_P79" LOC = P79;
+NET "led4_P78" LOC = P78;
+NET "led5_P75" LOC = P75;
+NET "led6_P74" LOC = P74;
+NET "led7_P67" LOC = P67;
+
+NET "out_a_P41" LOC = P41;
+NET "out_b_P40" LOC = P40;
+NET "out_c_P35" LOC = P35;
+NET "out_d_P34" LOC = P34;
+NET "out_e_P32" LOC = P32;
+NET "out_f_P29" LOC = P29;
+NET "out_g_P27" LOC = P27;
+
+NET "com0_P44" LOC = P44;
+NET "com1_P43" LOC = P43;
+NET "com2_P33" LOC = P33;
+NET "com3_P30" LOC = P30;
+

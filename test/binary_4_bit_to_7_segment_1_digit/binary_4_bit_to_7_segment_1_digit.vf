@@ -1,0 +1,278 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : binary_4_bit_to_7_segment_1_digit.vf
+// /___/   /\     Timestamp : 10/07/2023 16:57:50
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/admin/Desktop/Sakda/Circuit/test/binary_4_bit_to_7_segment_1_digit/binary_4_bit_to_7_segment_1_digit.vf -w C:/Users/admin/Desktop/Sakda/Circuit/test/binary_4_bit_to_7_segment_1_digit/binary_4_bit_to_7_segment_1_digit.sch
+//Design Name: binary_4_bit_to_7_segment_1_digit
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module OR6_HXILINX_binary_4_bit_to_7_segment_1_digit (O, I0, I1, I2, I3, I4, I5);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+
+assign O = (I0 || I1 || I2 || I3 || I4 || I5);
+
+endmodule
+`timescale 1ns / 1ps
+
+module binary_4_bit_to_7_segment_1_digit(sw0_p66, 
+                                         sw1_p62, 
+                                         sw2_p61, 
+                                         sw3_p59, 
+                                         common0_p44, 
+                                         common1_p43, 
+                                         common2_p33, 
+                                         common3_p30, 
+                                         out_a_p41, 
+                                         out_b_p40, 
+                                         out_c_p35, 
+                                         out_d_p34, 
+                                         out_e_p32, 
+                                         out_f_p29, 
+                                         out_g_p27);
+
+    input sw0_p66;
+    input sw1_p62;
+    input sw2_p61;
+    input sw3_p59;
+   output common0_p44;
+   output common1_p43;
+   output common2_p33;
+   output common3_p30;
+   output out_a_p41;
+   output out_b_p40;
+   output out_c_p35;
+   output out_d_p34;
+   output out_e_p32;
+   output out_f_p29;
+   output out_g_p27;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_108;
+   wire XLXN_109;
+   wire XLXN_110;
+   wire XLXN_111;
+   wire XLXN_112;
+   wire XLXN_133;
+   wire XLXN_134;
+   wire XLXN_135;
+   wire XLXN_136;
+   wire XLXN_137;
+   wire XLXN_148;
+   wire XLXN_149;
+   wire XLXN_150;
+   wire XLXN_151;
+   wire XLXN_165;
+   wire XLXN_166;
+   wire XLXN_167;
+   wire XLXN_168;
+   wire XLXN_169;
+   wire XLXN_184;
+   wire XLXN_185;
+   wire XLXN_186;
+   wire XLXN_187;
+   wire XLXN_188;
+   
+   AND3B2  XLXI_1 (.I0(sw1_p62), 
+                  .I1(sw2_p61), 
+                  .I2(sw3_p59), 
+                  .O(XLXN_1));
+   AND3B1  XLXI_2 (.I0(sw3_p59), 
+                  .I1(sw2_p61), 
+                  .I2(sw0_p66), 
+                  .O(XLXN_2));
+   AND2  XLXI_3 (.I0(sw1_p62), 
+                .I1(sw2_p61), 
+                .O(XLXN_3));
+   AND2B1  XLXI_4 (.I0(sw3_p59), 
+                  .I1(sw1_p62), 
+                  .O(XLXN_4));
+   AND2B1  XLXI_5 (.I0(sw0_p66), 
+                  .I1(sw3_p59), 
+                  .O(XLXN_5));
+   (* HU_SET = "XLXI_6_0" *) 
+   OR6_HXILINX_binary_4_bit_to_7_segment_1_digit  XLXI_6 (.I0(XLXN_6), 
+                                                         .I1(XLXN_5), 
+                                                         .I2(XLXN_4), 
+                                                         .I3(XLXN_3), 
+                                                         .I4(XLXN_2), 
+                                                         .I5(XLXN_1), 
+                                                         .O(out_a_p41));
+   AND2B2  XLXI_7 (.I0(sw0_p66), 
+                  .I1(sw2_p61), 
+                  .O(XLXN_6));
+   (* HU_SET = "XLXI_8_1" *) 
+   OR6_HXILINX_binary_4_bit_to_7_segment_1_digit  XLXI_8 (.I0(XLXN_9), 
+                                                         .I1(XLXN_10), 
+                                                         .I2(XLXN_11), 
+                                                         .I3(XLXN_12), 
+                                                         .I4(XLXN_13), 
+                                                         .I5(XLXN_14), 
+                                                         .O(out_b_p40));
+   AND3B1  XLXI_9 (.I0(sw3_p59), 
+                  .I1(sw1_p62), 
+                  .I2(sw0_p66), 
+                  .O(XLXN_9));
+   AND3B1  XLXI_10 (.I0(sw1_p62), 
+                   .I1(sw0_p66), 
+                   .I2(sw3_p59), 
+                   .O(XLXN_10));
+   AND3B2  XLXI_11 (.I0(sw2_p61), 
+                   .I1(sw1_p62), 
+                   .I2(sw3_p59), 
+                   .O(XLXN_11));
+   AND3B3  XLXI_12 (.I0(sw1_p62), 
+                   .I1(sw0_p66), 
+                   .I2(sw3_p59), 
+                   .O(XLXN_12));
+   AND2B2  XLXI_13 (.I0(sw2_p61), 
+                   .I1(sw3_p59), 
+                   .O(XLXN_13));
+   AND2B2  XLXI_14 (.I0(sw0_p66), 
+                   .I1(sw2_p61), 
+                   .O(XLXN_14));
+   AND2B2  XLXI_57 (.I0(sw1_p62), 
+                   .I1(sw3_p59), 
+                   .O(XLXN_108));
+   AND2B1  XLXI_58 (.I0(sw1_p62), 
+                   .I1(sw0_p66), 
+                   .O(XLXN_109));
+   AND2B1  XLXI_59 (.I0(sw3_p59), 
+                   .I1(sw0_p66), 
+                   .O(XLXN_110));
+   AND2B1  XLXI_60 (.I0(sw3_p59), 
+                   .I1(sw2_p61), 
+                   .O(XLXN_111));
+   AND2B1  XLXI_61 (.I0(sw2_p61), 
+                   .I1(sw3_p59), 
+                   .O(XLXN_112));
+   OR5  XLXI_62 (.I0(XLXN_112), 
+                .I1(XLXN_111), 
+                .I2(XLXN_110), 
+                .I3(XLXN_109), 
+                .I4(XLXN_108), 
+                .O(out_c_p35));
+   AND2B1  XLXI_63 (.I0(sw1_p62), 
+                   .I1(sw3_p59), 
+                   .O(XLXN_133));
+   AND3B3  XLXI_64 (.I0(sw0_p66), 
+                   .I1(sw2_p61), 
+                   .I2(sw3_p59), 
+                   .O(XLXN_134));
+   AND3B1  XLXI_65 (.I0(sw2_p61), 
+                   .I1(sw0_p66), 
+                   .I2(sw1_p62), 
+                   .O(XLXN_135));
+   AND3B1  XLXI_66 (.I0(sw0_p66), 
+                   .I1(sw1_p62), 
+                   .I2(sw2_p61), 
+                   .O(XLXN_136));
+   AND3B1  XLXI_67 (.I0(sw1_p62), 
+                   .I1(sw0_p66), 
+                   .I2(sw2_p61), 
+                   .O(XLXN_137));
+   OR5  XLXI_68 (.I0(XLXN_137), 
+                .I1(XLXN_136), 
+                .I2(XLXN_135), 
+                .I3(XLXN_134), 
+                .I4(XLXN_133), 
+                .O(out_d_p34));
+   AND2  XLXI_69 (.I0(sw3_p59), 
+                 .I1(sw1_p62), 
+                 .O(XLXN_148));
+   AND2  XLXI_70 (.I0(sw2_p61), 
+                 .I1(sw3_p59), 
+                 .O(XLXN_149));
+   AND2B1  XLXI_71 (.I0(sw0_p66), 
+                   .I1(sw1_p62), 
+                   .O(XLXN_150));
+   AND2B2  XLXI_73 (.I0(sw0_p66), 
+                   .I1(sw2_p61), 
+                   .O(XLXN_151));
+   OR4  XLXI_74 (.I0(XLXN_151), 
+                .I1(XLXN_150), 
+                .I2(XLXN_149), 
+                .I3(XLXN_148), 
+                .O(out_e_p32));
+   AND2  XLXI_75 (.I0(sw1_p62), 
+                 .I1(sw3_p59), 
+                 .O(XLXN_165));
+   AND2B1  XLXI_76 (.I0(sw2_p61), 
+                   .I1(sw3_p59), 
+                   .O(XLXN_166));
+   AND2B1  XLXI_77 (.I0(sw0_p66), 
+                   .I1(sw2_p61), 
+                   .O(XLXN_167));
+   AND2B2  XLXI_78 (.I0(sw1_p62), 
+                   .I1(sw0_p66), 
+                   .O(XLXN_168));
+   AND3B2  XLXI_79 (.I0(sw1_p62), 
+                   .I1(sw3_p59), 
+                   .I2(sw2_p61), 
+                   .O(XLXN_169));
+   OR5  XLXI_80 (.I0(XLXN_169), 
+                .I1(XLXN_168), 
+                .I2(XLXN_167), 
+                .I3(XLXN_166), 
+                .I4(XLXN_165), 
+                .O(out_f_p29));
+   AND2  XLXI_81 (.I0(sw0_p66), 
+                 .I1(sw3_p59), 
+                 .O(XLXN_184));
+   AND2B1  XLXI_82 (.I0(sw2_p61), 
+                   .I1(sw3_p59), 
+                   .O(XLXN_185));
+   AND2B1  XLXI_83 (.I0(sw2_p61), 
+                   .I1(sw1_p62), 
+                   .O(XLXN_186));
+   AND2B1  XLXI_84 (.I0(sw0_p66), 
+                   .I1(sw1_p62), 
+                   .O(XLXN_187));
+   AND3B2  XLXI_85 (.I0(sw3_p59), 
+                   .I1(sw1_p62), 
+                   .I2(sw2_p61), 
+                   .O(XLXN_188));
+   OR5  XLXI_86 (.I0(XLXN_188), 
+                .I1(XLXN_187), 
+                .I2(XLXN_186), 
+                .I3(XLXN_185), 
+                .I4(XLXN_184), 
+                .O(out_g_p27));
+   GND  XLXI_90 (.G(common0_p44));
+   VCC  XLXI_92 (.P(common3_p30));
+   VCC  XLXI_100 (.P(common2_p33));
+   VCC  XLXI_101 (.P(common1_p43));
+endmodule

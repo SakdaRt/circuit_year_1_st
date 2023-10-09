@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sat Oct 07 17:01:00 2023
+
+drc -z binary_4_bit_to_7_segment_1_digit.ncd binary_4_bit_to_7_segment_1_digit.pcf
+
+DRC detected 0 errors and 0 warnings.

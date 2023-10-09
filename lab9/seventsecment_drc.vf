@@ -1,0 +1,266 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : seventsecment_drc.vf
+// /___/   /\     Timestamp : 09/22/2023 23:58:24
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: D:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog seventsecment_drc.vf -w "E:/ISE project/lab9/seventsecment.sch"
+//Design Name: seventsecment
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module OR6_HXILINX_seventsecment (O, I0, I1, I2, I3, I4, I5);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+
+assign O = (I0 || I1 || I2 || I3 || I4 || I5);
+
+endmodule
+`timescale 1ns / 1ps
+
+module seventsecment(binary0, 
+                     binary1, 
+                     binary2, 
+                     binary3, 
+                     out_a, 
+                     out_b, 
+                     out_c, 
+                     out_d, 
+                     out_e, 
+                     out_f, 
+                     out_g);
+
+    input binary0;
+    input binary1;
+    input binary2;
+    input binary3;
+   output out_a;
+   output out_b;
+   output out_c;
+   output out_d;
+   output out_e;
+   output out_f;
+   output out_g;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_108;
+   wire XLXN_109;
+   wire XLXN_110;
+   wire XLXN_111;
+   wire XLXN_112;
+   wire XLXN_133;
+   wire XLXN_134;
+   wire XLXN_135;
+   wire XLXN_136;
+   wire XLXN_137;
+   wire XLXN_148;
+   wire XLXN_149;
+   wire XLXN_150;
+   wire XLXN_151;
+   wire XLXN_165;
+   wire XLXN_166;
+   wire XLXN_167;
+   wire XLXN_168;
+   wire XLXN_169;
+   wire XLXN_184;
+   wire XLXN_185;
+   wire XLXN_186;
+   wire XLXN_187;
+   wire XLXN_188;
+   
+   AND3B2  XLXI_1 (.I0(binary1), 
+                  .I1(binary2), 
+                  .I2(binary3), 
+                  .O(XLXN_1));
+   AND3B1  XLXI_2 (.I0(binary3), 
+                  .I1(binary2), 
+                  .I2(binary0), 
+                  .O(XLXN_2));
+   AND2  XLXI_3 (.I0(binary1), 
+                .I1(binary2), 
+                .O(XLXN_3));
+   AND2B1  XLXI_4 (.I0(binary3), 
+                  .I1(binary1), 
+                  .O(XLXN_4));
+   AND2B1  XLXI_5 (.I0(binary0), 
+                  .I1(binary3), 
+                  .O(XLXN_5));
+   (* HU_SET = "XLXI_6_0" *) 
+   OR6_HXILINX_seventsecment  XLXI_6 (.I0(XLXN_6), 
+                                     .I1(XLXN_5), 
+                                     .I2(XLXN_4), 
+                                     .I3(XLXN_3), 
+                                     .I4(XLXN_2), 
+                                     .I5(XLXN_1), 
+                                     .O(out_a));
+   AND2B2  XLXI_7 (.I0(binary0), 
+                  .I1(binary2), 
+                  .O(XLXN_6));
+   (* HU_SET = "XLXI_8_1" *) 
+   OR6_HXILINX_seventsecment  XLXI_8 (.I0(XLXN_9), 
+                                     .I1(XLXN_10), 
+                                     .I2(XLXN_11), 
+                                     .I3(XLXN_12), 
+                                     .I4(XLXN_13), 
+                                     .I5(XLXN_14), 
+                                     .O(out_b));
+   AND3B1  XLXI_9 (.I0(binary3), 
+                  .I1(binary1), 
+                  .I2(binary0), 
+                  .O(XLXN_9));
+   AND3B1  XLXI_10 (.I0(binary1), 
+                   .I1(binary0), 
+                   .I2(binary3), 
+                   .O(XLXN_10));
+   AND3B2  XLXI_11 (.I0(binary2), 
+                   .I1(binary1), 
+                   .I2(binary3), 
+                   .O(XLXN_11));
+   AND3B3  XLXI_12 (.I0(binary1), 
+                   .I1(binary0), 
+                   .I2(binary3), 
+                   .O(XLXN_12));
+   AND2B2  XLXI_13 (.I0(binary2), 
+                   .I1(binary3), 
+                   .O(XLXN_13));
+   AND2B2  XLXI_14 (.I0(binary0), 
+                   .I1(binary2), 
+                   .O(XLXN_14));
+   AND2B2  XLXI_57 (.I0(binary1), 
+                   .I1(binary3), 
+                   .O(XLXN_108));
+   AND2B1  XLXI_58 (.I0(binary1), 
+                   .I1(binary0), 
+                   .O(XLXN_109));
+   AND2B1  XLXI_59 (.I0(binary3), 
+                   .I1(binary0), 
+                   .O(XLXN_110));
+   AND2B1  XLXI_60 (.I0(binary3), 
+                   .I1(binary2), 
+                   .O(XLXN_111));
+   AND2B1  XLXI_61 (.I0(binary2), 
+                   .I1(binary3), 
+                   .O(XLXN_112));
+   OR5  XLXI_62 (.I0(XLXN_112), 
+                .I1(XLXN_111), 
+                .I2(XLXN_110), 
+                .I3(XLXN_109), 
+                .I4(XLXN_108), 
+                .O(out_c));
+   AND2B1  XLXI_63 (.I0(binary1), 
+                   .I1(binary3), 
+                   .O(XLXN_133));
+   AND3B3  XLXI_64 (.I0(binary0), 
+                   .I1(binary2), 
+                   .I2(binary3), 
+                   .O(XLXN_134));
+   AND3B1  XLXI_65 (.I0(binary2), 
+                   .I1(binary0), 
+                   .I2(binary1), 
+                   .O(XLXN_135));
+   AND3B1  XLXI_66 (.I0(binary0), 
+                   .I1(binary1), 
+                   .I2(binary2), 
+                   .O(XLXN_136));
+   AND3B1  XLXI_67 (.I0(binary1), 
+                   .I1(binary0), 
+                   .I2(binary2), 
+                   .O(XLXN_137));
+   OR5  XLXI_68 (.I0(XLXN_137), 
+                .I1(XLXN_136), 
+                .I2(XLXN_135), 
+                .I3(XLXN_134), 
+                .I4(XLXN_133), 
+                .O(out_d));
+   AND2  XLXI_69 (.I0(binary3), 
+                 .I1(binary1), 
+                 .O(XLXN_148));
+   AND2  XLXI_70 (.I0(binary2), 
+                 .I1(binary3), 
+                 .O(XLXN_149));
+   AND2B1  XLXI_71 (.I0(binary0), 
+                   .I1(binary1), 
+                   .O(XLXN_150));
+   AND2B2  XLXI_73 (.I0(binary0), 
+                   .I1(binary2), 
+                   .O(XLXN_151));
+   OR4  XLXI_74 (.I0(XLXN_151), 
+                .I1(XLXN_150), 
+                .I2(XLXN_149), 
+                .I3(XLXN_148), 
+                .O(out_e));
+   AND2  XLXI_75 (.I0(binary1), 
+                 .I1(binary3), 
+                 .O(XLXN_165));
+   AND2B1  XLXI_76 (.I0(binary2), 
+                   .I1(binary3), 
+                   .O(XLXN_166));
+   AND2B1  XLXI_77 (.I0(binary0), 
+                   .I1(binary2), 
+                   .O(XLXN_167));
+   AND2B2  XLXI_78 (.I0(binary1), 
+                   .I1(binary0), 
+                   .O(XLXN_168));
+   AND3B2  XLXI_79 (.I0(binary1), 
+                   .I1(binary3), 
+                   .I2(binary2), 
+                   .O(XLXN_169));
+   OR5  XLXI_80 (.I0(XLXN_169), 
+                .I1(XLXN_168), 
+                .I2(XLXN_167), 
+                .I3(XLXN_166), 
+                .I4(XLXN_165), 
+                .O(out_f));
+   AND2  XLXI_81 (.I0(binary0), 
+                 .I1(binary3), 
+                 .O(XLXN_184));
+   AND2B1  XLXI_82 (.I0(binary2), 
+                   .I1(binary3), 
+                   .O(XLXN_185));
+   AND2B1  XLXI_83 (.I0(binary2), 
+                   .I1(binary1), 
+                   .O(XLXN_186));
+   AND2B1  XLXI_84 (.I0(binary0), 
+                   .I1(binary1), 
+                   .O(XLXN_187));
+   AND3B2  XLXI_85 (.I0(binary3), 
+                   .I1(binary1), 
+                   .I2(binary2), 
+                   .O(XLXN_188));
+   OR5  XLXI_86 (.I0(XLXN_188), 
+                .I1(XLXN_187), 
+                .I2(XLXN_186), 
+                .I3(XLXN_185), 
+                .I4(XLXN_184), 
+                .O(out_g));
+endmodule

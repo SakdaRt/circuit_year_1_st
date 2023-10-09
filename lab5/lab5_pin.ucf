@@ -1,0 +1,11 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "XLXN_6" LOC = P6;
+NET "XLXN_7" LOC = P8;
+NET "XLXN_8" LOC = P10;
+NET "XLXN_9" LOC = P12;
+NET "XLXN_10" LOC = P15;
+NET "XLXN_11" LOC = P17;
+NET "XLXN_15" LOC = P82;
+NET "XLXN_20" LOC = P83;

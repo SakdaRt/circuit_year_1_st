@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Sep 22 18:19:12 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led4_P78" LOCATE = SITE "P78" LEVEL 1;
+COMP "led5_P75" LOCATE = SITE "P75" LEVEL 1;
+COMP "led6_P74" LOCATE = SITE "P74" LEVEL 1;
+COMP "led0_P82" LOCATE = SITE "P82" LEVEL 1;
+COMP "led7_P67" LOCATE = SITE "P67" LEVEL 1;
+COMP "led1_P81" LOCATE = SITE "P81" LEVEL 1;
+COMP "led2_P80" LOCATE = SITE "P80" LEVEL 1;
+COMP "binary0" LOCATE = SITE "P66" LEVEL 1;
+COMP "binary1" LOCATE = SITE "P62" LEVEL 1;
+COMP "binary2" LOCATE = SITE "P61" LEVEL 1;
+COMP "binary3" LOCATE = SITE "P59" LEVEL 1;
+COMP "led3_P79" LOCATE = SITE "P79" LEVEL 1;
+SCHEMATIC END;
+

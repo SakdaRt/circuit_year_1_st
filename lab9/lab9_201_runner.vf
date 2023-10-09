@@ -1,0 +1,125 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : lab9_201_runner.vf
+// /___/   /\     Timestamp : 09/22/2023 18:30:42
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "E:/ISE project/lab9/lab9_201_runner.vf" -w "E:/ISE project/lab9/lab9_201_runner.sch"
+//Design Name: lab9_201_runner
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module lab9_201_runner(sl_sw_0_P66, 
+                       sl_sw_1_P62, 
+                       sl_sw_2_P61, 
+                       sl_sw_3_P59, 
+                       sl_sw_4_P58, 
+                       sl_sw_5_P57, 
+                       sl_sw_6_P56, 
+                       sl_sw_7_P55, 
+                       binary0, 
+                       binary1, 
+                       binary2, 
+                       binary3);
+
+    input sl_sw_0_P66;
+    input sl_sw_1_P62;
+    input sl_sw_2_P61;
+    input sl_sw_3_P59;
+    input sl_sw_4_P58;
+    input sl_sw_5_P57;
+    input sl_sw_6_P56;
+    input sl_sw_7_P55;
+   output binary0;
+   output binary1;
+   output binary2;
+   output binary3;
+   
+   wire XLXN_222;
+   wire XLXN_223;
+   wire XLXN_224;
+   wire XLXN_225;
+   wire XLXN_227;
+   wire XLXN_228;
+   wire XLXN_229;
+   wire XLXN_230;
+   wire XLXN_232;
+   wire XLXN_233;
+   wire XLXN_234;
+   wire XLXN_235;
+   
+   BUF  XLXI_129 (.I(sl_sw_7_P55), 
+                 .O(binary3));
+   AND2B1  XLXI_130 (.I0(sl_sw_7_P55), 
+                    .I1(sl_sw_3_P59), 
+                    .O(XLXN_222));
+   AND2B1  XLXI_131 (.I0(sl_sw_7_P55), 
+                    .I1(sl_sw_4_P58), 
+                    .O(XLXN_223));
+   AND2B1  XLXI_132 (.I0(sl_sw_7_P55), 
+                    .I1(sl_sw_5_P57), 
+                    .O(XLXN_224));
+   AND2B1  XLXI_133 (.I0(sl_sw_7_P55), 
+                    .I1(sl_sw_6_P56), 
+                    .O(XLXN_225));
+   OR4  XLXI_134 (.I0(XLXN_222), 
+                 .I1(XLXN_223), 
+                 .I2(XLXN_224), 
+                 .I3(XLXN_225), 
+                 .O(binary2));
+   AND4B3  XLXI_135 (.I0(sl_sw_7_P55), 
+                    .I1(sl_sw_4_P58), 
+                    .I2(sl_sw_3_P59), 
+                    .I3(sl_sw_1_P62), 
+                    .O(XLXN_227));
+   AND4B3  XLXI_136 (.I0(sl_sw_7_P55), 
+                    .I1(sl_sw_4_P58), 
+                    .I2(sl_sw_3_P59), 
+                    .I3(sl_sw_2_P61), 
+                    .O(XLXN_228));
+   AND2B1  XLXI_137 (.I0(sl_sw_7_P55), 
+                    .I1(sl_sw_5_P57), 
+                    .O(XLXN_229));
+   AND2B1  XLXI_138 (.I0(sl_sw_7_P55), 
+                    .I1(sl_sw_6_P56), 
+                    .O(XLXN_230));
+   OR4  XLXI_139 (.I0(XLXN_227), 
+                 .I1(XLXN_228), 
+                 .I2(XLXN_229), 
+                 .I3(XLXN_230), 
+                 .O(binary1));
+   AND5B4  XLXI_140 (.I0(sl_sw_7_P55), 
+                    .I1(sl_sw_5_P57), 
+                    .I2(sl_sw_3_P59), 
+                    .I3(sl_sw_1_P62), 
+                    .I4(sl_sw_0_P66), 
+                    .O(XLXN_232));
+   AND4B3  XLXI_142 (.I0(sl_sw_7_P55), 
+                    .I1(sl_sw_5_P57), 
+                    .I2(sl_sw_3_P59), 
+                    .I3(sl_sw_2_P61), 
+                    .O(XLXN_233));
+   AND3B2  XLXI_143 (.I0(sl_sw_7_P55), 
+                    .I1(sl_sw_5_P57), 
+                    .I2(sl_sw_4_P58), 
+                    .O(XLXN_234));
+   AND2B1  XLXI_144 (.I0(sl_sw_7_P55), 
+                    .I1(sl_sw_6_P56), 
+                    .O(XLXN_235));
+   OR4  XLXI_145 (.I0(XLXN_232), 
+                 .I1(XLXN_233), 
+                 .I2(XLXN_234), 
+                 .I3(XLXN_235), 
+                 .O(binary0));
+endmodule

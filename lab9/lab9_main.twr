@@ -1,0 +1,241 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml lab9_main.twx lab9_main.ncd -o lab9_main.twr lab9_main.pcf
+-ucf lab9_main.ucf
+
+Design file:              lab9_main.ncd
+Physical constraint file: lab9_main.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock PB1_P45 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+led0_P82    |        14.726(R)|      SLOW  |         7.919(R)|      FAST  |PB1_P45_IBUF_BUFG |   0.000|
+led1_P81    |        14.306(R)|      SLOW  |         7.939(R)|      FAST  |PB1_P45_IBUF_BUFG |   0.000|
+led2_P80    |        14.529(R)|      SLOW  |         8.085(R)|      FAST  |PB1_P45_IBUF_BUFG |   0.000|
+led3_P79    |        14.703(R)|      SLOW  |         7.962(R)|      FAST  |PB1_P45_IBUF_BUFG |   0.000|
+led4_P78    |        14.128(R)|      SLOW  |         7.913(R)|      FAST  |PB1_P45_IBUF_BUFG |   0.000|
+led5_P75    |        14.763(R)|      SLOW  |         7.639(R)|      FAST  |PB1_P45_IBUF_BUFG |   0.000|
+led6_P74    |        14.807(R)|      SLOW  |         7.505(R)|      FAST  |PB1_P45_IBUF_BUFG |   0.000|
+led7_P67    |        15.027(R)|      SLOW  |         7.415(R)|      FAST  |PB1_P45_IBUF_BUFG |   0.000|
+out_a_P41   |        14.631(R)|      SLOW  |         7.495(R)|      FAST  |PB1_P45_IBUF_BUFG |   0.000|
+out_b_P40   |        14.798(R)|      SLOW  |         7.570(R)|      FAST  |PB1_P45_IBUF_BUFG |   0.000|
+out_c_P35   |        14.458(R)|      SLOW  |         7.343(R)|      FAST  |PB1_P45_IBUF_BUFG |   0.000|
+out_d_P34   |        14.159(R)|      SLOW  |         7.480(R)|      FAST  |PB1_P45_IBUF_BUFG |   0.000|
+out_e_P32   |        14.478(R)|      SLOW  |         7.354(R)|      FAST  |PB1_P45_IBUF_BUFG |   0.000|
+out_f_P29   |        14.402(R)|      SLOW  |         7.720(R)|      FAST  |PB1_P45_IBUF_BUFG |   0.000|
+out_g_p27   |        14.653(R)|      SLOW  |         7.675(R)|      FAST  |PB1_P45_IBUF_BUFG |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock PB2_P46 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+com0_P44    |        11.474(R)|      SLOW  |         6.393(R)|      FAST  |PB2_P46_IBUF_BUFG |   0.000|
+led0_P82    |        12.859(R)|      SLOW  |         6.770(R)|      FAST  |PB2_P46_IBUF_BUFG |   0.000|
+led1_P81    |        12.789(R)|      SLOW  |         6.550(R)|      FAST  |PB2_P46_IBUF_BUFG |   0.000|
+led2_P80    |        13.112(R)|      SLOW  |         6.668(R)|      FAST  |PB2_P46_IBUF_BUFG |   0.000|
+led3_P79    |        12.857(R)|      SLOW  |         6.646(R)|      FAST  |PB2_P46_IBUF_BUFG |   0.000|
+led4_P78    |        12.802(R)|      SLOW  |         6.506(R)|      FAST  |PB2_P46_IBUF_BUFG |   0.000|
+led5_P75    |        12.606(R)|      SLOW  |         6.775(R)|      FAST  |PB2_P46_IBUF_BUFG |   0.000|
+led6_P74    |        12.487(R)|      SLOW  |         6.765(R)|      FAST  |PB2_P46_IBUF_BUFG |   0.000|
+led7_P67    |        12.647(R)|      SLOW  |         6.675(R)|      FAST  |PB2_P46_IBUF_BUFG |   0.000|
+out_a_P41   |        12.210(R)|      SLOW  |         6.491(R)|      FAST  |PB2_P46_IBUF_BUFG |   0.000|
+out_b_P40   |        12.408(R)|      SLOW  |         6.566(R)|      FAST  |PB2_P46_IBUF_BUFG |   0.000|
+out_c_P35   |        12.280(R)|      SLOW  |         6.339(R)|      FAST  |PB2_P46_IBUF_BUFG |   0.000|
+out_d_P34   |        11.758(R)|      SLOW  |         6.436(R)|      FAST  |PB2_P46_IBUF_BUFG |   0.000|
+out_e_P32   |        12.098(R)|      SLOW  |         6.350(R)|      FAST  |PB2_P46_IBUF_BUFG |   0.000|
+out_f_P29   |        12.565(R)|      SLOW  |         6.584(R)|      FAST  |PB2_P46_IBUF_BUFG |   0.000|
+out_g_p27   |        12.614(R)|      SLOW  |         6.671(R)|      FAST  |PB2_P46_IBUF_BUFG |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock PB1_P45
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+PB1_P45        |    0.886|   -0.731|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock PB2_P46
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+PB2_P46        |    0.880|   -0.138|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock vrclk_P123
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+vrclk_P123     |    1.517|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+sl_sw_0_P66    |led0_P82       |   11.142|
+sl_sw_0_P66    |led1_P81       |   10.420|
+sl_sw_0_P66    |led2_P80       |   10.814|
+sl_sw_0_P66    |led3_P79       |   11.119|
+sl_sw_0_P66    |led4_P78       |   10.392|
+sl_sw_0_P66    |led5_P75       |   11.179|
+sl_sw_0_P66    |led6_P74       |   11.223|
+sl_sw_0_P66    |led7_P67       |   10.907|
+sl_sw_0_P66    |out_a_P41      |   10.473|
+sl_sw_0_P66    |out_b_P40      |   10.941|
+sl_sw_0_P66    |out_c_P35      |   10.813|
+sl_sw_0_P66    |out_d_P34      |   10.184|
+sl_sw_0_P66    |out_e_P32      |   10.511|
+sl_sw_0_P66    |out_f_P29      |   10.435|
+sl_sw_0_P66    |out_g_p27      |   10.729|
+sl_sw_1_P62    |led0_P82       |   11.411|
+sl_sw_1_P62    |led1_P81       |   10.781|
+sl_sw_1_P62    |led2_P80       |   11.083|
+sl_sw_1_P62    |led3_P79       |   11.388|
+sl_sw_1_P62    |led4_P78       |   10.661|
+sl_sw_1_P62    |led5_P75       |   11.448|
+sl_sw_1_P62    |led6_P74       |   11.492|
+sl_sw_1_P62    |led7_P67       |   11.176|
+sl_sw_1_P62    |out_a_P41      |   11.218|
+sl_sw_1_P62    |out_b_P40      |   11.385|
+sl_sw_1_P62    |out_c_P35      |   11.082|
+sl_sw_1_P62    |out_d_P34      |   10.746|
+sl_sw_1_P62    |out_e_P32      |   11.065|
+sl_sw_1_P62    |out_f_P29      |   10.989|
+sl_sw_1_P62    |out_g_p27      |   11.240|
+sl_sw_2_P61    |led0_P82       |   11.308|
+sl_sw_2_P61    |led1_P81       |   10.909|
+sl_sw_2_P61    |led2_P80       |   10.980|
+sl_sw_2_P61    |led3_P79       |   11.285|
+sl_sw_2_P61    |led4_P78       |   10.705|
+sl_sw_2_P61    |led5_P75       |   11.478|
+sl_sw_2_P61    |led6_P74       |   11.389|
+sl_sw_2_P61    |led7_P67       |   11.263|
+sl_sw_2_P61    |out_a_P41      |   11.346|
+sl_sw_2_P61    |out_b_P40      |   11.513|
+sl_sw_2_P61    |out_c_P35      |   11.173|
+sl_sw_2_P61    |out_d_P34      |   10.874|
+sl_sw_2_P61    |out_e_P32      |   11.193|
+sl_sw_2_P61    |out_f_P29      |   11.117|
+sl_sw_2_P61    |out_g_p27      |   11.368|
+sl_sw_3_P59    |led0_P82       |   11.236|
+sl_sw_3_P59    |led1_P81       |   10.862|
+sl_sw_3_P59    |led2_P80       |   10.908|
+sl_sw_3_P59    |led3_P79       |   11.213|
+sl_sw_3_P59    |led4_P78       |   10.658|
+sl_sw_3_P59    |led5_P75       |   11.431|
+sl_sw_3_P59    |led6_P74       |   11.317|
+sl_sw_3_P59    |led7_P67       |   11.383|
+sl_sw_3_P59    |out_a_P41      |   11.299|
+sl_sw_3_P59    |out_b_P40      |   11.466|
+sl_sw_3_P59    |out_c_P35      |   11.126|
+sl_sw_3_P59    |out_d_P34      |   10.827|
+sl_sw_3_P59    |out_e_P32      |   11.146|
+sl_sw_3_P59    |out_f_P29      |   11.070|
+sl_sw_3_P59    |out_g_p27      |   11.321|
+sl_sw_4_P58    |led0_P82       |   10.837|
+sl_sw_4_P58    |led1_P81       |   10.660|
+sl_sw_4_P58    |led2_P80       |   10.657|
+sl_sw_4_P58    |led3_P79       |   10.589|
+sl_sw_4_P58    |led4_P78       |   10.456|
+sl_sw_4_P58    |led5_P75       |   11.229|
+sl_sw_4_P58    |led6_P74       |   11.037|
+sl_sw_4_P58    |led7_P67       |   11.014|
+sl_sw_4_P58    |out_a_P41      |   11.097|
+sl_sw_4_P58    |out_b_P40      |   11.264|
+sl_sw_4_P58    |out_c_P35      |   10.924|
+sl_sw_4_P58    |out_d_P34      |   10.625|
+sl_sw_4_P58    |out_e_P32      |   10.944|
+sl_sw_4_P58    |out_f_P29      |   10.868|
+sl_sw_4_P58    |out_g_p27      |   11.119|
+sl_sw_5_P57    |led0_P82       |   11.350|
+sl_sw_5_P57    |led1_P81       |   10.628|
+sl_sw_5_P57    |led2_P80       |   11.022|
+sl_sw_5_P57    |led3_P79       |   11.327|
+sl_sw_5_P57    |led4_P78       |   10.600|
+sl_sw_5_P57    |led5_P75       |   11.387|
+sl_sw_5_P57    |led6_P74       |   11.431|
+sl_sw_5_P57    |led7_P67       |   11.115|
+sl_sw_5_P57    |out_a_P41      |   10.681|
+sl_sw_5_P57    |out_b_P40      |   11.149|
+sl_sw_5_P57    |out_c_P35      |   11.021|
+sl_sw_5_P57    |out_d_P34      |   10.392|
+sl_sw_5_P57    |out_e_P32      |   10.719|
+sl_sw_5_P57    |out_f_P29      |   10.643|
+sl_sw_5_P57    |out_g_p27      |   10.937|
+sl_sw_6_P56    |led0_P82       |   10.191|
+sl_sw_6_P56    |led1_P81       |    9.939|
+sl_sw_6_P56    |led2_P80       |   10.162|
+sl_sw_6_P56    |led3_P79       |   10.113|
+sl_sw_6_P56    |led4_P78       |    9.761|
+sl_sw_6_P56    |led5_P75       |   10.068|
+sl_sw_6_P56    |led6_P74       |   10.310|
+sl_sw_6_P56    |led7_P67       |   10.660|
+sl_sw_6_P56    |out_a_P41      |    9.936|
+sl_sw_6_P56    |out_b_P40      |   10.103|
+sl_sw_6_P56    |out_c_P35      |    9.763|
+sl_sw_6_P56    |out_d_P34      |    9.464|
+sl_sw_6_P56    |out_e_P32      |    9.783|
+sl_sw_6_P56    |out_f_P29      |    9.854|
+sl_sw_6_P56    |out_g_p27      |    9.958|
+sl_sw_7_p55    |led0_P82       |   11.545|
+sl_sw_7_p55    |led1_P81       |   10.823|
+sl_sw_7_p55    |led2_P80       |   11.217|
+sl_sw_7_p55    |led3_P79       |   11.522|
+sl_sw_7_p55    |led4_P78       |   10.795|
+sl_sw_7_p55    |led5_P75       |   11.582|
+sl_sw_7_p55    |led6_P74       |   11.626|
+sl_sw_7_p55    |led7_P67       |   11.310|
+sl_sw_7_p55    |out_a_P41      |   11.243|
+sl_sw_7_p55    |out_b_P40      |   11.410|
+sl_sw_7_p55    |out_c_P35      |   11.216|
+sl_sw_7_p55    |out_d_P34      |   10.771|
+sl_sw_7_p55    |out_e_P32      |   11.090|
+sl_sw_7_p55    |out_f_P29      |   11.014|
+sl_sw_7_p55    |out_g_p27      |   11.265|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Sep 25 17:58:13 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4572 MB
+
+
+

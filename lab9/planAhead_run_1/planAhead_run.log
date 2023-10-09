@@ -1,0 +1,70 @@
+
+****** PlanAhead v14.7
+  **** Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {E:/ISE project/lab9/pa.fromHdl.tcl}
+# create_project -name lab9 -dir "E:/ISE project/lab9/planAhead_run_1" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "lab9_201_runner.ucf" [current_fileset -constrset]
+Adding file 'E:/ISE project/lab9/lab9_201_runner.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {lab9_201_runner.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top lab9_201_runner $srcset
+# add_files [list {lab9_201_runner.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "D:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "E:/ISE project/lab9/lab9_201_runner.vf" into library work
+Loading clock regions from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from D:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [E:/ISE project/lab9/lab9_201_runner.ucf]
+Finished Parsing UCF File [E:/ISE project/lab9/lab9_201_runner.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 609a37c9
+open_rtl_design: Time (s): elapsed = 00:00:07 . Memory (MB): peak = 534.852 ; gain = 100.477
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P66 [get_ports sl_sw_0_P66]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports sl_sw_1_P62]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports sl_sw_2_P61]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports sl_sw_3_P59]
+endgroup
+startgroup
+set_property package_pin P58 [get_ports sl_sw_4_P58]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports sl_sw_5_P57]
+endgroup
+startgroup
+set_property package_pin P56 [get_ports sl_sw_6_P56]
+endgroup
+startgroup
+set_property package_pin P55 [get_ports sl_sw_7_P55]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Fri Sep 22 18:05:21 2023...
+INFO: [Common 17-83] Releasing license: PlanAhead

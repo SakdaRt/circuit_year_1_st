@@ -1,0 +1,43 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : demux.vf
+// /___/   /\     Timestamp : 09/23/2023 15:08:24
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "E:/ISE project/lab9/demux.vf" -w "E:/ISE project/lab9/demux.sch"
+//Design Name: demux
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module demux(D, 
+             S, 
+             Y1, 
+             Y2);
+
+    input D;
+    input S;
+   output Y1;
+   output Y2;
+   
+   wire XLXN_1;
+   
+   INV  XLXI_1 (.I(S), 
+               .O(XLXN_1));
+   AND2  XLXI_2 (.I0(D), 
+                .I1(XLXN_1), 
+                .O(Y1));
+   AND2  XLXI_3 (.I0(D), 
+                .I1(S), 
+                .O(Y2));
+endmodule

@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sat Oct 07 16:58:46 2023
+# Process ID: 5540
+# Log file: C:/Users/admin/Desktop/Sakda/Circuit/test/binary_4_bit_to_7_segment_1_digit/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/admin/Desktop/Sakda/Circuit/test/binary_4_bit_to_7_segment_1_digit/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/admin/Desktop/Sakda/Circuit/test/binary_4_bit_to_7_segment_1_digit/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P44 [get_ports common0_p44]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports common1_p43]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports common2_p33]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports common3_p30]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports out_a_p41]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports out_b_p40]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports out_c_p35]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports out_d_p34]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports out_e_p32]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports out_f_p29]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports out_g_p27]
+endgroup
+startgroup
+set_property package_pin P66 [get_ports sw0_p66]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports sw1_p62]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports sw2_p61]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports sw3_p59]
+endgroup
+save_constraints

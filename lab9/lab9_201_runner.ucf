@@ -1,0 +1,26 @@
+
+
+NET "sl_sw_0_P66" LOC = P66;
+NET "sl_sw_1_P62" LOC = P62;
+NET "sl_sw_2_P61" LOC = P61;
+NET "sl_sw_3_P59" LOC = P59;
+NET "sl_sw_4_P58" LOC = P58;
+NET "sl_sw_5_P57" LOC = P57;
+NET "sl_sw_6_P56" LOC = P56;
+NET "sl_sw_7_P55" LOC = P55;
+
+# PlanAhead Generated physical constraints 
+
+#NET "binary0" LOC = P82;
+#NET "binary1" LOC = P81;
+#NET "binary2" LOC = P80;
+#NET "binary3" LOC = P79;
+
+NET "led0_P82" LOC = P82;
+NET "led1_P81" LOC = P81;
+NET "led2_P80" LOC = P80;
+NET "led3_P79" LOC = P79;
+NET "led4_P78" LOC = P78;
+NET "led5_P75" LOC = P75;
+NET "led6_P74" LOC = P74;
+NET "led7_P67" LOC = P67;

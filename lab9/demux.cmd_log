@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog demux_drc.vf -w {E:/ISE project/lab9/demux.sch} 
+sch2sym -intstyle ise -family spartan6 -w -refsym demux {E:/ISE project/lab9/demux.sch} {E:/ISE project/lab9/demux.sym} 

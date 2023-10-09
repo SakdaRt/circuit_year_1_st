@@ -1,0 +1,84 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n 3
+-fastpaths -xml lab9_201_led.twx lab9_201_led.ncd -o lab9_201_led.twr
+lab9_201_led.pcf -ucf lab9_201_runner.ucf
+
+Design file:              lab9_201_led.ncd
+Physical constraint file: lab9_201_led.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+binary0        |led0_P82       |    7.526|
+binary0        |led1_P81       |    7.150|
+binary0        |led2_P80       |    7.283|
+binary0        |led3_P79       |    7.198|
+binary0        |led4_P78       |    6.911|
+binary0        |led5_P75       |    5.901|
+binary0        |led6_P74       |    5.835|
+binary0        |led7_P67       |    6.010|
+binary1        |led0_P82       |    7.601|
+binary1        |led1_P81       |    7.342|
+binary1        |led2_P80       |    7.325|
+binary1        |led3_P79       |    7.442|
+binary1        |led4_P78       |    7.485|
+binary1        |led5_P75       |    6.207|
+binary1        |led6_P74       |    6.137|
+binary1        |led7_P67       |    6.525|
+binary2        |led0_P82       |    7.396|
+binary2        |led1_P81       |    7.352|
+binary2        |led2_P80       |    7.114|
+binary2        |led3_P79       |    7.323|
+binary2        |led4_P78       |    7.160|
+binary2        |led5_P75       |    6.246|
+binary2        |led6_P74       |    6.175|
+binary2        |led7_P67       |    6.246|
+binary3        |led0_P82       |    8.045|
+binary3        |led1_P81       |    7.897|
+binary3        |led2_P80       |    7.985|
+binary3        |led3_P79       |    7.434|
+binary3        |led4_P78       |    7.427|
+binary3        |led5_P75       |    6.506|
+binary3        |led6_P74       |    6.406|
+binary3        |led7_P67       |    6.529|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Sep 22 18:19:22 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4571 MB
+
+
+

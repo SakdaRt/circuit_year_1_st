@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family spartan6 -verilog seventsecment_drc.vf -w {E:/ISE project/lab9/seventsecment.sch} 
+sch2hdl -intstyle ise -family spartan6 -verilog seventsecment_drc.vf -w {E:/ISE project/lab9/seventsecment.sch} 
+sch2sym -intstyle ise -family spartan6 -refsym seventsecment {E:/ISE project/lab9/seventsecment.sch} {E:/ISE project/lab9/seventsecment.sym} 

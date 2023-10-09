@@ -1,0 +1,23 @@
+
+NET "a" LOC = P41;
+NET "b" LOC = P40;
+NET "c" LOC = P35;
+NET "d" LOC = P34;
+NET "e" LOC = P32;
+NET "f" LOC = P29;
+NET "g" LOC = P27;
+NET "Ledcheck" LOC = P82;
+NET "A1" LOC = P66;
+NET "A2" LOC = P62;
+NET "A3" LOC = P61;
+NET "A4" LOC = P59;
+
+NET "XLXN_151" LOC = P30;
+
+# PlanAhead Generated physical constraints 
+
+NET "selecter1" LOC = P112;
+NET "n_B1" LOC = P58;
+NET "n_B2" LOC = P57;
+NET "n_B3" LOC = P56;
+NET "n_B4" LOC = P55;

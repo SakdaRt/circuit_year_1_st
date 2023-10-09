@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/admin/Desktop/Sakda/Circuit/test/binary_4_bit_to_7_segment_1_digit/binary_4_bit_to_7_segment_1_digit.xst" -ofn "C:/Users/admin/Desktop/Sakda/Circuit/test/binary_4_bit_to_7_segment_1_digit/binary_4_bit_to_7_segment_1_digit.syr" 
+xst -intstyle ise -ifn "C:/Users/admin/Desktop/Sakda/Circuit/test/binary_4_bit_to_7_segment_1_digit/binary_4_bit_to_7_segment_1_digit.xst" -ofn "C:/Users/admin/Desktop/Sakda/Circuit/test/binary_4_bit_to_7_segment_1_digit/binary_4_bit_to_7_segment_1_digit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 binary_4_bit_to_7_segment_1_digit.ngc binary_4_bit_to_7_segment_1_digit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o binary_4_bit_to_7_segment_1_digit_map.ncd binary_4_bit_to_7_segment_1_digit.ngd binary_4_bit_to_7_segment_1_digit.pcf 
+par -w -intstyle ise -ol high -mt off binary_4_bit_to_7_segment_1_digit_map.ncd binary_4_bit_to_7_segment_1_digit.ncd binary_4_bit_to_7_segment_1_digit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml binary_4_bit_to_7_segment_1_digit.twx binary_4_bit_to_7_segment_1_digit.ncd -o binary_4_bit_to_7_segment_1_digit.twr binary_4_bit_to_7_segment_1_digit.pcf 
+xst -intstyle ise -ifn "C:/Users/admin/Desktop/Sakda/Circuit/test/binary_4_bit_to_7_segment_1_digit/binary_4_bit_to_7_segment_1_digit.xst" -ofn "C:/Users/admin/Desktop/Sakda/Circuit/test/binary_4_bit_to_7_segment_1_digit/binary_4_bit_to_7_segment_1_digit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc binary_4_bit_to_7_segment_1_digit.ucf -p xc6slx9-tqg144-3 binary_4_bit_to_7_segment_1_digit.ngc binary_4_bit_to_7_segment_1_digit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o binary_4_bit_to_7_segment_1_digit_map.ncd binary_4_bit_to_7_segment_1_digit.ngd binary_4_bit_to_7_segment_1_digit.pcf 
+par -w -intstyle ise -ol high -mt off binary_4_bit_to_7_segment_1_digit_map.ncd binary_4_bit_to_7_segment_1_digit.ncd binary_4_bit_to_7_segment_1_digit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml binary_4_bit_to_7_segment_1_digit.twx binary_4_bit_to_7_segment_1_digit.ncd -o binary_4_bit_to_7_segment_1_digit.twr binary_4_bit_to_7_segment_1_digit.pcf -ucf binary_4_bit_to_7_segment_1_digit.ucf 
+bitgen -intstyle ise -f binary_4_bit_to_7_segment_1_digit.ut binary_4_bit_to_7_segment_1_digit.ncd 

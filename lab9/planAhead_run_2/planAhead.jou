@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Fri Sep 22 18:07:21 2023
+# Process ID: 19072
+# Log file: E:/ISE project/lab9/planAhead_run_2/planAhead.log
+# Journal file: E:/ISE project/lab9/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {E:/ISE project/lab9/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P82 [get_ports led0_P82]
+endgroup
+startgroup
+set_property package_pin P81 [get_ports led1_P81]
+endgroup
+startgroup
+set_property package_pin P80 [get_ports led2_P80]
+endgroup
+startgroup
+set_property package_pin P79 [get_ports led3_P79]
+endgroup
+startgroup
+set_property package_pin P78 [get_ports led4_P78]
+endgroup
+startgroup
+set_property package_pin P75 [get_ports led5_P75]
+endgroup
+startgroup
+set_property package_pin P74 [get_ports led6_P74]
+endgroup
+startgroup
+set_property package_pin P67 [get_ports led7_P67]
+endgroup
+save_constraints

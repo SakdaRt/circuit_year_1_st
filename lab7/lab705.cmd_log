@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "C:/Users/admin/Desktop/Sakda/Circuit/lab705/lab705.xst" -ofn "C:/Users/admin/Desktop/Sakda/Circuit/lab705/lab705.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc l705.ucf -uc lab705.ucf -p xc6slx9-tqg144-3 lab705.ngc lab705.ngd  
+xst -intstyle ise -ifn "C:/Users/admin/Desktop/Sakda/Circuit/lab705/lab705.xst" -ofn "C:/Users/admin/Desktop/Sakda/Circuit/lab705/lab705.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc l705.ucf -uc lab705.ucf -p xc6slx9-tqg144-3 lab705.ngc lab705.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7_pin.ucf -p xc6slx9-tqg144-3 lab705.ngc lab705.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7_pin.ucf -p xc6slx9-tqg144-3 lab705.ngc lab705.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab705_map.ncd lab705.ngd lab705.pcf 
+par -w -intstyle ise -ol high -mt off lab705_map.ncd lab705.ncd lab705.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab705.twx lab705.ncd -o lab705.twr lab705.pcf -ucf lab7_pin.ucf 
+bitgen -intstyle ise -f lab705.ut lab705.ncd 

@@ -1,0 +1,9 @@
+
+
+NET "vrclk_P123" LOC = P123;
+NET "PB3_P47" LOC = P47;
+NET "binary0" LOC = P82;
+NET "binary1" LOC = P81;
+NET "binary2" LOC = P80;
+NET "binary3" LOC = P79;
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\ISE project\lab9\lab9_201_runner.ncd
+OUTFILE=E:\ISE project\lab9\lab9_201_runner.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=E:\ISE project\lab9
+LICENSE=WebPack
+USER_INFO=__0_0_0

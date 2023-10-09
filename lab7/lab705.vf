@@ -1,0 +1,116 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : lab705.vf
+// /___/   /\     Timestamp : 09/11/2023 17:18:10
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/admin/Desktop/Sakda/Circuit/lab705/lab705.vf -w C:/Users/admin/Desktop/Sakda/Circuit/lab705/lab705.sch
+//Design Name: lab705
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module lab705(pb1, 
+              sw0, 
+              com0, 
+              com1, 
+              com2, 
+              com3, 
+              mn0, 
+              out_a, 
+              out_b, 
+              out_c, 
+              out_d, 
+              out_e, 
+              out_f);
+
+    input pb1;
+    input sw0;
+   output com0;
+   output com1;
+   output com2;
+   output com3;
+   output mn0;
+   output out_a;
+   output out_b;
+   output out_c;
+   output out_d;
+   output out_e;
+   output out_f;
+   
+   wire Dip_sw1;
+   wire Dip_sw2;
+   wire XLXN_2;
+   wire XLXN_10;
+   wire XLXN_22;
+   wire XLXN_25;
+   wire out_a_DUMMY;
+   wire out_b_DUMMY;
+   wire out_c_DUMMY;
+   wire out_d_DUMMY;
+   wire out_e_DUMMY;
+   wire out_f_DUMMY;
+   wire mn0_DUMMY;
+   
+   assign mn0 = mn0_DUMMY;
+   assign out_a = out_a_DUMMY;
+   assign out_b = out_b_DUMMY;
+   assign out_c = out_c_DUMMY;
+   assign out_d = out_d_DUMMY;
+   assign out_e = out_e_DUMMY;
+   assign out_f = out_f_DUMMY;
+   INV  XLXI_13 (.I(XLXN_2), 
+                .O(out_a_DUMMY));
+   AND2  XLXI_21 (.I0(pb1), 
+                 .I1(XLXN_22), 
+                 .O(mn0_DUMMY));
+   VCC  XLXI_22 (.P(XLXN_22));
+   BUF  XLXI_505 (.I(Dip_sw1), 
+                 .O(com1));
+   BUF  XLXI_507 (.I(Dip_sw1), 
+                 .O(com2));
+   BUF  XLXI_508 (.I(Dip_sw1), 
+                 .O(com3));
+   BUF  XLXI_509 (.I(Dip_sw2), 
+                 .O(com0));
+   FDC  XLXI_510 (.C(mn0_DUMMY), 
+                 .CLR(sw0), 
+                 .D(XLXN_10), 
+                 .Q(XLXN_2));
+   FDC  XLXI_511 (.C(mn0_DUMMY), 
+                 .CLR(sw0), 
+                 .D(out_a_DUMMY), 
+                 .Q(out_b_DUMMY));
+   FDC  XLXI_512 (.C(mn0_DUMMY), 
+                 .CLR(sw0), 
+                 .D(out_b_DUMMY), 
+                 .Q(out_c_DUMMY));
+   FDC  XLXI_513 (.C(mn0_DUMMY), 
+                 .CLR(sw0), 
+                 .D(out_c_DUMMY), 
+                 .Q(out_d_DUMMY));
+   FDC  XLXI_514 (.C(mn0_DUMMY), 
+                 .CLR(sw0), 
+                 .D(out_d_DUMMY), 
+                 .Q(out_e_DUMMY));
+   FDC  XLXI_515 (.C(mn0_DUMMY), 
+                 .CLR(sw0), 
+                 .D(out_e_DUMMY), 
+                 .Q(out_f_DUMMY));
+   GND  XLXI_516 (.G(Dip_sw2));
+   VCC  XLXI_517 (.P(Dip_sw1));
+   VCC  XLXI_519 (.P(XLXN_25));
+   XOR2  XLXI_521 (.I0(XLXN_25), 
+                  .I1(out_f_DUMMY), 
+                  .O(XLXN_10));
+endmodule

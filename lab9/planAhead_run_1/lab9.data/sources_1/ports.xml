@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="sl_sw_0_P66" Dir="IN"/>
+		<Port Id="sl_sw_1_P62" Dir="IN"/>
+		<Port Id="sl_sw_2_P61" Dir="IN"/>
+		<Port Id="sl_sw_3_P59" Dir="IN"/>
+		<Port Id="sl_sw_4_P58" Dir="IN"/>
+		<Port Id="sl_sw_5_P57" Dir="IN"/>
+		<Port Id="sl_sw_6_P56" Dir="IN"/>
+		<Port Id="sl_sw_7_P55" Dir="IN"/>
+		<Port Id="binary0" Dir="OUT"/>
+		<Port Id="binary1" Dir="OUT"/>
+		<Port Id="binary2" Dir="OUT"/>
+		<Port Id="binary3" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

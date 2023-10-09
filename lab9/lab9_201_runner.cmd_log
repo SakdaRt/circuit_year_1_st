@@ -1,0 +1,23 @@
+xst -intstyle ise -ifn "E:/ISE project/lab9/lab9_201_runner.xst" -ofn "E:/ISE project/lab9/lab9_201_runner.syr" 
+sch2hdl -intstyle ise -family spartan6 -verilog lab9_201_runner_drc.vf -w {E:/ISE project/lab9/lab9_201_runner.sch} 
+sch2sym -intstyle ise -family spartan6 -refsym lab9_201_runner {E:/ISE project/lab9/lab9_201_runner.sch} {E:/ISE project/lab9/lab9_201_runner.sym} 
+xst -intstyle ise -ifn "E:/ISE project/lab9/lab9_201_runner.xst" -ofn "E:/ISE project/lab9/lab9_201_runner.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 "lab9_201_runner.ngc" lab9_201_runner.ngd  
+xst -intstyle ise -ifn "E:/ISE project/lab9/lab9_201_runner.xst" -ofn "E:/ISE project/lab9/lab9_201_runner.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 "lab9_201_runner.ngc" lab9_201_runner.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_201_runner_map.ncd lab9_201_runner.ngd lab9_201_runner.pcf 
+par -w -intstyle ise -ol high -mt off lab9_201_runner_map.ncd lab9_201_runner.ncd lab9_201_runner.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9_201_runner.twx lab9_201_runner.ncd -o lab9_201_runner.twr lab9_201_runner.pcf 
+bitgen -intstyle ise -f lab9_201_runner.ut lab9_201_runner.ncd 
+xst -intstyle ise -ifn "E:/ISE project/lab9/lab9_201_runner.xst" -ofn "E:/ISE project/lab9/lab9_201_runner.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 "lab9_201_runner.ngc" lab9_201_runner.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_201_runner_map.ncd lab9_201_runner.ngd lab9_201_runner.pcf 
+par -w -intstyle ise -ol high -mt off lab9_201_runner_map.ncd lab9_201_runner.ncd lab9_201_runner.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9_201_runner.twx lab9_201_runner.ncd -o lab9_201_runner.twr lab9_201_runner.pcf 
+bitgen -intstyle ise -f lab9_201_runner.ut lab9_201_runner.ncd 
+xst -intstyle ise -ifn "E:/ISE project/lab9/lab9_201_runner.xst" -ofn "E:/ISE project/lab9/lab9_201_runner.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9_201_runner.ucf -p xc6slx9-tqg144-3 "lab9_201_runner.ngc" lab9_201_runner.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_201_runner_map.ncd lab9_201_runner.ngd lab9_201_runner.pcf 
+par -w -intstyle ise -ol high -mt off lab9_201_runner_map.ncd lab9_201_runner.ncd lab9_201_runner.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9_201_runner.twx lab9_201_runner.ncd -o lab9_201_runner.twr lab9_201_runner.pcf -ucf lab9_201_runner.ucf 
+bitgen -intstyle ise -f lab9_201_runner.ut lab9_201_runner.ncd 

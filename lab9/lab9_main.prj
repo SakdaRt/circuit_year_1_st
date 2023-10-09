@@ -1,0 +1,6 @@
+verilog work "seventsecment.vf"
+verilog work "lab9_201_runner.vf"
+verilog work "lab9_201_led.vf"
+verilog work "demux.vf"
+verilog work "counter0to9.vf"
+verilog work "lab9_main.vf"

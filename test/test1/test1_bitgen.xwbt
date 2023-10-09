@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\admin\Desktop\Sakda\Circuit\test\test1\test1.ncd
+OUTFILE=C:\Users\admin\Desktop\Sakda\Circuit\test\test1\test1.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\Users\admin\Desktop\Sakda\Circuit\test\test1
+LICENSE=WebPack
+USER_INFO=__0_0_0

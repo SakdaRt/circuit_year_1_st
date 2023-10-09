@@ -1,0 +1,40 @@
+sch2hdl -intstyle ise -family spartan6 -verilog counter0to9_drc.vf -w {E:/ISE project/lab9/counter0to9.sch} 
+sch2sym -intstyle ise -family spartan6 -refsym counter0to9 {E:/ISE project/lab9/counter0to9.sch} {E:/ISE project/lab9/counter0to9.sym} 
+xst -intstyle ise -ifn "E:/ISE project/lab9/counter0to9.xst" -ofn "E:/ISE project/lab9/counter0to9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counterset.ucf -p xc6slx9-tqg144-3 "counter0to9.ngc" counter0to9.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counterset.ucf -p xc6slx9-tqg144-3 "counter0to9.ngc" counter0to9.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o counter0to9_map.ncd counter0to9.ngd counter0to9.pcf 
+par -w -intstyle ise -ol high -mt off counter0to9_map.ncd counter0to9.ncd counter0to9.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml counter0to9.twx counter0to9.ncd -o counter0to9.twr counter0to9.pcf -ucf counterset.ucf 
+bitgen -intstyle ise -f counter0to9.ut counter0to9.ncd 
+xst -intstyle ise -ifn "E:/ISE project/lab9/counter0to9.xst" -ofn "E:/ISE project/lab9/counter0to9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counterset.ucf -p xc6slx9-tqg144-3 "counter0to9.ngc" counter0to9.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o counter0to9_map.ncd counter0to9.ngd counter0to9.pcf 
+par -w -intstyle ise -ol high -mt off counter0to9_map.ncd counter0to9.ncd counter0to9.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml counter0to9.twx counter0to9.ncd -o counter0to9.twr counter0to9.pcf -ucf counterset.ucf 
+bitgen -intstyle ise -f counter0to9.ut counter0to9.ncd 
+xst -intstyle ise -ifn "E:/ISE project/lab9/counter0to9.xst" -ofn "E:/ISE project/lab9/counter0to9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counterset.ucf -p xc6slx9-tqg144-3 "counter0to9.ngc" counter0to9.ngd  
+xst -intstyle ise -ifn "E:/ISE project/lab9/counter0to9.xst" -ofn "E:/ISE project/lab9/counter0to9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counterset.ucf -p xc6slx9-tqg144-3 "counter0to9.ngc" counter0to9.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o counter0to9_map.ncd counter0to9.ngd counter0to9.pcf 
+par -w -intstyle ise -ol high -mt off counter0to9_map.ncd counter0to9.ncd counter0to9.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml counter0to9.twx counter0to9.ncd -o counter0to9.twr counter0to9.pcf -ucf counterset.ucf 
+bitgen -intstyle ise -f counter0to9.ut counter0to9.ncd 
+xst -intstyle ise -ifn "E:/ISE project/lab9/counter0to9.xst" -ofn "E:/ISE project/lab9/counter0to9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counterset.ucf -p xc6slx9-tqg144-3 "counter0to9.ngc" counter0to9.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o counter0to9_map.ncd counter0to9.ngd counter0to9.pcf 
+par -w -intstyle ise -ol high -mt off counter0to9_map.ncd counter0to9.ncd counter0to9.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml counter0to9.twx counter0to9.ncd -o counter0to9.twr counter0to9.pcf -ucf counterset.ucf 
+bitgen -intstyle ise -f counter0to9.ut counter0to9.ncd 
+xst -intstyle ise -ifn "E:/ISE project/lab9/counter0to9.xst" -ofn "E:/ISE project/lab9/counter0to9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counterset.ucf -p xc6slx9-tqg144-3 "counter0to9.ngc" counter0to9.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o counter0to9_map.ncd counter0to9.ngd counter0to9.pcf 
+par -w -intstyle ise -ol high -mt off counter0to9_map.ncd counter0to9.ncd counter0to9.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml counter0to9.twx counter0to9.ncd -o counter0to9.twr counter0to9.pcf -ucf counterset.ucf 
+bitgen -intstyle ise -f counter0to9.ut counter0to9.ncd 
+sch2hdl -intstyle ise -family spartan6 -verilog counter0to9_drc.vf -w {E:/ISE project/lab9/counter0to9.sch} 
+sch2sym -intstyle ise -family spartan6 -refsym counter0to9 {E:/ISE project/lab9/counter0to9.sch} {E:/ISE project/lab9/counter0to9.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym counter0to9 {E:/ISE project/lab9/counter0to9.sch} {E:/ISE project/lab9/counter0to9.sym} 
+sch2hdl -intstyle ise -family spartan6 -verilog counter0to9_drc.vf -w {E:/ISE project/lab9/counter0to9.sch} 
+sch2sym -intstyle ise -family spartan6 -w -refsym counter0to9 {E:/ISE project/lab9/counter0to9.sch} {E:/ISE project/lab9/counter0to9.sym} 
