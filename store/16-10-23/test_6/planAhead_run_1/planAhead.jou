@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Mon Oct 16 10:33:38 2023
+# Process ID: 5260
+# Log file: C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/16-10-23/test_6/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/16-10-23/test_6/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/16-10-23/test_6/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P123 [get_ports CLK_P123]
+endgroup
+startgroup
+set_property package_pin P82 [get_ports P82]
+endgroup
+startgroup
+set_property package_pin P95 [get_ports P95]
+endgroup
+set_property is_loc_fixed false [get_ports [list  P95]]
+set_property is_loc_fixed true [get_ports [list  P95]]
+save_constraints

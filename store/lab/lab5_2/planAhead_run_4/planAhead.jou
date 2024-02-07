@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Mon Aug 07 17:08:55 2023
+# Process ID: 41508
+# Log file: D:/ISE Project/lab5_2/planAhead_run_4/planAhead.log
+# Journal file: D:/ISE Project/lab5_2/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/ISE Project/lab5_2/pa.fromNetlist.tcl}
+startgroup
+set_property package_pin P1 [get_ports XLXN_1]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports XLXN_2]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports XLXN_3]
+endgroup
+startgroup
+set_property package_pin P5 [get_ports XLXN_5]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports XLXN_4]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports XLXN_6]
+endgroup
+startgroup
+set_property package_pin P16 [get_ports XLXN_7]
+endgroup
+startgroup
+set_property package_pin P21 [get_ports XLXN_8]
+endgroup
+set_property is_loc_fixed false [get_ports [list  XLXN_8]]
+set_property is_loc_fixed true [get_ports [list  XLXN_8]]
+save_constraints

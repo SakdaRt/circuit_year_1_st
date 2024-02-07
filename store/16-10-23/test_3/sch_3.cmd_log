@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/16-10-23/test_3/sch_3.xst" -ofn "C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/16-10-23/test_3/sch_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sch_3.ucf -p xc6slx9-tqg144-3 sch_3.ngc sch_3.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sch_3_map.ncd sch_3.ngd sch_3.pcf 
+par -w -intstyle ise -ol high -mt off sch_3_map.ncd sch_3.ncd sch_3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sch_3.twx sch_3.ncd -o sch_3.twr sch_3.pcf -ucf sch_3.ucf 
+bitgen -intstyle ise -f sch_3.ut sch_3.ncd 

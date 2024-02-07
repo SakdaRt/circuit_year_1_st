@@ -1,0 +1,7 @@
+select figure at 2522 1608 8 -branches -sn=1
+select figure at 2867 1478 8 -branches -sn=1
+select figure at 2742 1548 8 -branches -sn=1
+select figure at 1246 361 8 -branches -sn=1
+add instance counter0_9 304 2240 R0 -sn=1
+select figure at 515 2203 8 -branches -sn=1
+delete selection -sn=1

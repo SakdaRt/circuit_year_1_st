@@ -1,0 +1,241 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : lab7t.vf
+// /___/   /\     Timestamp : 10/16/2023 09:25:22
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/ex2_7seg/lab7t.vf -w C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/ex2_7seg/lab7t.sch
+//Design Name: lab7t
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FTC_HXILINX_lab7t(Q, C, CLR, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              T;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+  
+   
+ 
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module counter0_9_MUSER_lab7t(clk, 
+                              clk2);
+
+    input clk;
+   output clk2;
+   
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_19;
+   wire XLXN_20;
+   wire XLXN_21;
+   wire XLXN_23;
+   wire clk2_DUMMY;
+   
+   assign clk2 = clk2_DUMMY;
+   (* HU_SET = "XLXI_1_0" *) 
+   FTC_HXILINX_lab7t  XLXI_1 (.C(clk), 
+                             .CLR(clk2_DUMMY), 
+                             .T(XLXN_6), 
+                             .Q(XLXN_21));
+   (* HU_SET = "XLXI_2_1" *) 
+   FTC_HXILINX_lab7t  XLXI_2 (.C(clk), 
+                             .CLR(clk2_DUMMY), 
+                             .T(XLXN_21), 
+                             .Q(XLXN_13));
+   (* HU_SET = "XLXI_3_2" *) 
+   FTC_HXILINX_lab7t  XLXI_3 (.C(clk), 
+                             .CLR(clk2_DUMMY), 
+                             .T(XLXN_7), 
+                             .Q(XLXN_11));
+   (* HU_SET = "XLXI_4_3" *) 
+   FTC_HXILINX_lab7t  XLXI_4 (.C(clk), 
+                             .CLR(clk2_DUMMY), 
+                             .T(XLXN_12), 
+                             .Q(XLXN_23));
+   VCC  XLXI_5 (.P(XLXN_6));
+   AND2  XLXI_6 (.I0(XLXN_13), 
+                .I1(XLXN_21), 
+                .O(XLXN_7));
+   AND3  XLXI_7 (.I0(XLXN_11), 
+                .I1(XLXN_13), 
+                .I2(XLXN_21), 
+                .O(XLXN_12));
+   AND4  XLXI_8 (.I0(XLXN_23), 
+                .I1(XLXN_20), 
+                .I2(XLXN_13), 
+                .I3(XLXN_19), 
+                .O(clk2_DUMMY));
+   INV  XLXI_9 (.I(XLXN_21), 
+               .O(XLXN_19));
+   INV  XLXI_10 (.I(XLXN_11), 
+                .O(XLXN_20));
+endmodule
+`timescale 1ns / 1ps
+
+module lab7t(CLK_P123, 
+             A_P41, 
+             B_P40, 
+             com_0_P44, 
+             com_1_P43, 
+             com_2_P33, 
+             com_3_P30, 
+             C_P35, 
+             D_P34, 
+             E_P32, 
+             F__29);
+
+    input CLK_P123;
+   output A_P41;
+   output B_P40;
+   output com_0_P44;
+   output com_1_P43;
+   output com_2_P33;
+   output com_3_P30;
+   output C_P35;
+   output D_P34;
+   output E_P32;
+   output F__29;
+   
+   wire com0_P44;
+   wire com1_P43;
+   wire com2_P33;
+   wire com3_P30;
+   wire DIPS5;
+   wire P123;
+   wire XLXN_29;
+   wire XLXN_41;
+   wire XLXN_70;
+   wire XLXN_87;
+   wire XLXN_104;
+   wire XLXN_105;
+   wire XLXN_106;
+   wire XLXN_109;
+   wire XLXN_110;
+   wire XLXN_142;
+   wire XLXN_147;
+   wire XLXN_162;
+   wire XLXN_163;
+   wire XLXN_164;
+   wire XLXN_165;
+   wire XLXN_166;
+   wire XLXN_168;
+   wire B_P40_DUMMY;
+   wire F__29_DUMMY;
+   wire D_P34_DUMMY;
+   wire A_P41_DUMMY;
+   wire C_P35_DUMMY;
+   wire E_P32_DUMMY;
+   
+   assign A_P41 = A_P41_DUMMY;
+   assign B_P40 = B_P40_DUMMY;
+   assign C_P35 = C_P35_DUMMY;
+   assign D_P34 = D_P34_DUMMY;
+   assign E_P32 = E_P32_DUMMY;
+   assign F__29 = F__29_DUMMY;
+   XOR2  XLXI_11 (.I0(DIPS5), 
+                 .I1(), 
+                 .O(XLXN_29));
+   AND2  XLXI_13 (.I0(P123), 
+                 .I1(XLXN_70), 
+                 .O(XLXN_41));
+   FD #( .INIT(1'b0) ) XLXI_19 (.C(XLXN_41), 
+               .D(A_P41_DUMMY), 
+               .Q(B_P40_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_20 (.C(XLXN_41), 
+               .D(B_P40_DUMMY), 
+               .Q(C_P35_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_21 (.C(XLXN_41), 
+               .D(C_P35_DUMMY), 
+               .Q(D_P34_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_22 (.C(XLXN_41), 
+               .D(D_P34_DUMMY), 
+               .Q(E_P32_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_23 (.C(XLXN_41), 
+               .D(E_P32_DUMMY), 
+               .Q(F__29_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_30 (.C(XLXN_41), 
+               .D(XLXN_29), 
+               .Q(XLXN_87));
+   VCC  XLXI_37 (.P(XLXN_70));
+   INV  XLXI_46 (.I(XLXN_87), 
+                .O(A_P41_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_55 (.C(XLXN_109), 
+               .D(com1_P43), 
+               .Q(com2_P33));
+   FD #( .INIT(1'b0) ) XLXI_56 (.C(XLXN_109), 
+               .D(com2_P33), 
+               .Q(com3_P30));
+   XOR2  XLXI_57 (.I0(XLXN_142), 
+                 .I1(XLXN_147), 
+                 .O(XLXN_106));
+   AND2  XLXI_58 (.I0(XLXN_104), 
+                 .I1(XLXN_105), 
+                 .O(XLXN_109));
+   VCC  XLXI_59 (.P(XLXN_105));
+   FD #( .INIT(1'b0) ) XLXI_60 (.C(XLXN_109), 
+               .D(XLXN_106), 
+               .Q(XLXN_110));
+   INV  XLXI_61 (.I(XLXN_110), 
+                .O(com0_P44));
+   FD #( .INIT(1'b0) ) XLXI_62 (.C(XLXN_109), 
+               .D(com0_P44), 
+               .Q(com1_P43));
+   VCC  XLXI_81 (.P(XLXN_142));
+   VCC  XLXI_82 (.P(DIPS5));
+   BUF  XLXI_83 (.I(F__29_DUMMY), 
+                .O(XLXN_104));
+   BUF  XLXI_84 (.I(com3_P30), 
+                .O(XLXN_147));
+   INV  XLXI_85 (.I(com0_P44), 
+                .O(com_0_P44));
+   INV  XLXI_86 (.I(com1_P43), 
+                .O(com_1_P43));
+   INV  XLXI_87 (.I(com2_P33), 
+                .O(com_2_P33));
+   INV  XLXI_88 (.I(com3_P30), 
+                .O(com_3_P30));
+   counter0_9_MUSER_lab7t  XLXI_89 (.clk(CLK_P123), 
+                                   .clk2(XLXN_162));
+   counter0_9_MUSER_lab7t  XLXI_90 (.clk(XLXN_162), 
+                                   .clk2(XLXN_163));
+   counter0_9_MUSER_lab7t  XLXI_91 (.clk(XLXN_163), 
+                                   .clk2(XLXN_164));
+   counter0_9_MUSER_lab7t  XLXI_92 (.clk(XLXN_164), 
+                                   .clk2(XLXN_165));
+   counter0_9_MUSER_lab7t  XLXI_93 (.clk(XLXN_165), 
+                                   .clk2(XLXN_166));
+   counter0_9_MUSER_lab7t  XLXI_94 (.clk(XLXN_166), 
+                                   .clk2(XLXN_168));
+   counter0_9_MUSER_lab7t  XLXI_95 (.clk(XLXN_168), 
+                                   .clk2(P123));
+endmodule

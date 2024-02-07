@@ -1,0 +1,2 @@
+select figure at 7829 5372 8 -branches -sn=1
+select all in -1755 -643 7829 5372 -branches -enclosed -sn=1

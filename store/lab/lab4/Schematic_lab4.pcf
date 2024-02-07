@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Jul 31 18:00:00 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "A" LOCATE = SITE "P59" LEVEL 1;
+COMP "B" LOCATE = SITE "P61" LEVEL 1;
+COMP "C" LOCATE = SITE "P62" LEVEL 1;
+COMP "D" LOCATE = SITE "P66" LEVEL 1;
+COMP "OUTPUT" LOCATE = SITE "P83" LEVEL 1;
+SCHEMATIC END;
+

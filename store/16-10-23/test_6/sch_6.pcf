@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Oct 16 10:34:42 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "CLK_P123" LOCATE = SITE "P123" LEVEL 1;
+COMP "P82" LOCATE = SITE "P82" LEVEL 1;
+COMP "P95" LOCATE = SITE "P95" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="Ck" Dir="IN"/>
+		<Port Id="Dip1" Dir="IN"/>
+		<Port Id="Dip2" Dir="IN"/>
+		<Port Id="Dip3" Dir="IN"/>
+		<Port Id="Dip4" Dir="IN"/>
+		<Port Id="common0" Dir="OUT"/>
+		<Port Id="common1" Dir="OUT"/>
+		<Port Id="common2" Dir="OUT"/>
+		<Port Id="common3" Dir="OUT"/>
+		<Port Id="Oa" Dir="OUT"/>
+		<Port Id="Ob" Dir="OUT"/>
+		<Port Id="Oc" Dir="OUT"/>
+		<Port Id="Od" Dir="OUT"/>
+		<Port Id="Oe" Dir="OUT"/>
+		<Port Id="Og" Dir="OUT"/>
+		<Port Id="O_F" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

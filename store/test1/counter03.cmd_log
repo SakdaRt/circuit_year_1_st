@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan6 -refsym counter03 {C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/test1/counter03 (1).sch} C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/test1/counter03.sym 
+sch2sym -intstyle ise -family spartan6 -refsym counter03 C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/test1/counter03.sch C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/test1/counter03.sym 
+sch2sym -intstyle ise -family spartan6 -refsym counter03 C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/test1/counter03.sch C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/test1/counter03.sym 

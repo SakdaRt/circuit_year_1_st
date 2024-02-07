@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "D:/ISE Project/lab4/Schematic_lab4.xst" -ofn "D:/ISE Project/lab4/Schematic_lab4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Pin.ucf -uc Schematic_lab4.ucf -p xc6slx9-tqg144-3 "Schematic_lab4.ngc" Schematic_lab4.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Schematic_lab4_map.ncd Schematic_lab4.ngd Schematic_lab4.pcf 
+par -w -intstyle ise -ol high -mt off Schematic_lab4_map.ncd Schematic_lab4.ncd Schematic_lab4.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Schematic_lab4.twx Schematic_lab4.ncd -o Schematic_lab4.twr Schematic_lab4.pcf -ucf Pin.ucf -ucf Schematic_lab4.ucf 
+bitgen -intstyle ise -f Schematic_lab4.ut Schematic_lab4.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Pin.ucf -uc Schematic_lab4.ucf -p xc6slx9-tqg144-3 "Schematic_lab4.ngc" Schematic_lab4.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Schematic_lab4_map.ncd Schematic_lab4.ngd Schematic_lab4.pcf 
+par -w -intstyle ise -ol high -mt off Schematic_lab4_map.ncd Schematic_lab4.ncd Schematic_lab4.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Schematic_lab4.twx Schematic_lab4.ncd -o Schematic_lab4.twr Schematic_lab4.pcf -ucf Pin.ucf -ucf Schematic_lab4.ucf 
+bitgen -intstyle ise -f Schematic_lab4.ut Schematic_lab4.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Pin.ucf -uc Schematic_lab4.ucf -p xc6slx9-tqg144-3 "Schematic_lab4.ngc" Schematic_lab4.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Schematic_lab4_map.ncd Schematic_lab4.ngd Schematic_lab4.pcf 
+par -w -intstyle ise -ol high -mt off Schematic_lab4_map.ncd Schematic_lab4.ncd Schematic_lab4.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Schematic_lab4.twx Schematic_lab4.ncd -o Schematic_lab4.twr Schematic_lab4.pcf -ucf Pin.ucf -ucf Schematic_lab4.ucf 
+bitgen -intstyle ise -f Schematic_lab4.ut Schematic_lab4.ncd 

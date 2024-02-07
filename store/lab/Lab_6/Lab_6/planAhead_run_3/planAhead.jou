@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Mon Aug 21 22:23:44 2023
+# Process ID: 10404
+# Log file: C:/Users/Napat Junsiri/Desktop/digital/Lab_6/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/Napat Junsiri/Desktop/digital/Lab_6/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/Napat Junsiri/Desktop/digital/Lab_6/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P30 [get_ports XLXN_151]
+endgroup
+save_constraints

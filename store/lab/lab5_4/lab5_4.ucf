@@ -1,0 +1,5 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "XLXN_6" LOC = P16;
+NET "XLXN_8" LOC = P67;

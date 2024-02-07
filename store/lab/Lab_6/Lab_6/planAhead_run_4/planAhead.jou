@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Mon Aug 21 22:27:20 2023
+# Process ID: 2360
+# Log file: C:/Users/Napat Junsiri/Desktop/digital/Lab_6/planAhead_run_4/planAhead.log
+# Journal file: C:/Users/Napat Junsiri/Desktop/digital/Lab_6/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/Napat Junsiri/Desktop/digital/Lab_6/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1

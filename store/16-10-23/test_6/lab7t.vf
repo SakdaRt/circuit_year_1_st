@@ -1,0 +1,99 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : lab7t.vf
+// /___/   /\     Timestamp : 10/16/2023 10:49:51
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/16-10-23/test_6/lab7t.vf -w C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/16-10-23/test_6/lab7t.sch
+//Design Name: lab7t
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module lab7t(CLK, 
+             LED0_P82, 
+             LED1_P81, 
+             LED2_P80, 
+             LED3_P79, 
+             LED4_P78, 
+             LED5_P75, 
+             LED6_P74, 
+             LED7_P67);
+
+    input CLK;
+   output LED0_P82;
+   output LED1_P81;
+   output LED2_P80;
+   output LED3_P79;
+   output LED4_P78;
+   output LED5_P75;
+   output LED6_P74;
+   output LED7_P67;
+   
+   wire DIPS5;
+   wire XLXN_29;
+   wire XLXN_41;
+   wire XLXN_70;
+   wire XLXN_87;
+   wire LED2_P80_DUMMY;
+   wire LED7_P67_DUMMY;
+   wire LED4_P78_DUMMY;
+   wire LED1_P81_DUMMY;
+   wire LED6_P74_DUMMY;
+   wire LED3_P79_DUMMY;
+   wire LED0_P82_DUMMY;
+   wire LED5_P75_DUMMY;
+   
+   assign LED0_P82 = LED0_P82_DUMMY;
+   assign LED1_P81 = LED1_P81_DUMMY;
+   assign LED2_P80 = LED2_P80_DUMMY;
+   assign LED3_P79 = LED3_P79_DUMMY;
+   assign LED4_P78 = LED4_P78_DUMMY;
+   assign LED5_P75 = LED5_P75_DUMMY;
+   assign LED6_P74 = LED6_P74_DUMMY;
+   assign LED7_P67 = LED7_P67_DUMMY;
+   XOR2  XLXI_11 (.I0(DIPS5), 
+                 .I1(LED7_P67_DUMMY), 
+                 .O(XLXN_29));
+   AND2  XLXI_13 (.I0(CLK), 
+                 .I1(XLXN_70), 
+                 .O(XLXN_41));
+   FD #( .INIT(1'b0) ) XLXI_19 (.C(XLXN_41), 
+               .D(LED0_P82_DUMMY), 
+               .Q(LED1_P81_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_20 (.C(XLXN_41), 
+               .D(LED1_P81_DUMMY), 
+               .Q(LED2_P80_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_21 (.C(XLXN_41), 
+               .D(LED2_P80_DUMMY), 
+               .Q(LED3_P79_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_22 (.C(XLXN_41), 
+               .D(LED3_P79_DUMMY), 
+               .Q(LED4_P78_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_23 (.C(XLXN_41), 
+               .D(LED4_P78_DUMMY), 
+               .Q(LED5_P75_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_30 (.C(XLXN_41), 
+               .D(XLXN_29), 
+               .Q(XLXN_87));
+   VCC  XLXI_37 (.P(XLXN_70));
+   INV  XLXI_46 (.I(XLXN_87), 
+                .O(LED0_P82_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_47 (.C(XLXN_41), 
+               .D(LED5_P75_DUMMY), 
+               .Q(LED6_P74_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_48 (.C(XLXN_41), 
+               .D(LED6_P74_DUMMY), 
+               .Q(LED7_P67_DUMMY));
+   VCC  XLXI_49 (.P(DIPS5));
+endmodule

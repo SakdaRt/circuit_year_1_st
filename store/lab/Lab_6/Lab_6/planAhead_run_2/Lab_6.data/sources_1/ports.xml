@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="A1" Dir="IN"/>
+		<Port Id="A2" Dir="IN"/>
+		<Port Id="A3" Dir="IN"/>
+		<Port Id="A4" Dir="IN"/>
+		<Port Id="B1" Dir="IN"/>
+		<Port Id="B2" Dir="IN"/>
+		<Port Id="B3" Dir="IN"/>
+		<Port Id="B4" Dir="IN"/>
+		<Port Id="a" Dir="OUT"/>
+		<Port Id="b" Dir="OUT"/>
+		<Port Id="c" Dir="OUT"/>
+		<Port Id="d" Dir="OUT"/>
+		<Port Id="e" Dir="OUT"/>
+		<Port Id="f" Dir="OUT"/>
+		<Port Id="g" Dir="OUT"/>
+		<Port Id="LED_CHECK" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

@@ -1,0 +1,94 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Mon Aug 07 17:08:55 2023
+# Process ID: 41508
+# Log file: D:/ISE Project/lab5_2/planAhead_run_4/planAhead.log
+# Journal file: D:/ISE Project/lab5_2/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {D:/ISE Project/lab5_2/pa.fromNetlist.tcl}
+# create_project -name lab5_2 -dir "D:/ISE Project/lab5_2/planAhead_run_4" -part xc6slx9tqg144-3
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/ISE Project/lab5_2/lab5_2.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/ISE Project/lab5_2} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "lab5_2_imple.ucf" [current_fileset -constrset]
+Adding file 'D:/ISE Project/lab5_2/lab5_2_imple.ucf' to fileset 'constrs_1'
+# add_files [list {lab5_2_imple.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx9tqg144-3
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design lab5_2.ngc ...
+WARNING:NetListWriters:298 - No output is written to lab5_2.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file lab5_2.edif ...
+ngc2edif: Total memory usage is 79392 kilobytes
+
+Parsing EDIF File [./planAhead_run_4/lab5_2.data/cache/lab5_2_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_4/lab5_2.data/cache/lab5_2_ngc_zx.edif]
+Loading clock regions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/ISE Project/lab5_2/lab5_2_imple.ucf]
+Finished Parsing UCF File [D:/ISE Project/lab5_2/lab5_2_imple.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: a2b24ccf
+link_design: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 593.035 ; gain = 99.867
+startgroup
+set_property package_pin P1 [get_ports XLXN_1]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports XLXN_2]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports XLXN_3]
+endgroup
+startgroup
+set_property package_pin P5 [get_ports XLXN_5]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports XLXN_4]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports XLXN_6]
+endgroup
+startgroup
+set_property package_pin P16 [get_ports XLXN_7]
+endgroup
+startgroup
+set_property package_pin P21 [get_ports XLXN_8]
+endgroup
+set_property is_loc_fixed false [get_ports [list  XLXN_8]]
+set_property is_loc_fixed true [get_ports [list  XLXN_8]]
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See D:/ISE Project/lab5_2\planAhead_pid41508.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Aug 07 17:10:04 2023...
+INFO: [Common 17-83] Releasing license: PlanAhead

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\admin\Documents\GitHub\circuit_year_1_st\store\ex2_7seg\lab7t.ncd
+OUTFILE=C:\Users\admin\Documents\GitHub\circuit_year_1_st\store\ex2_7seg\lab7t.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\Users\admin\Documents\GitHub\circuit_year_1_st\store\ex2_7seg
+LICENSE=WebPack
+USER_INFO=__0_0_0

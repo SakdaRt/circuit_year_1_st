@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="XLXN_7" Dir="IN"/>
+		<Port Id="P_67" Dir="OUT"/>
+		<Port Id="P_74" Dir="OUT"/>
+		<Port Id="P_75" Dir="OUT"/>
+		<Port Id="P_78" Dir="OUT"/>
+		<Port Id="P_79" Dir="OUT"/>
+		<Port Id="P_82" Dir="OUT"/>
+		<Port Id="P80" Dir="OUT"/>
+		<Port Id="P81" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym Clock_Hz C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/test1_1/Clock_Hz.sch C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/test1_1/Clock_Hz.sym 

@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "D:/ISE Project/lab5_3/lab5__3.xst" -ofn "D:/ISE Project/lab5_3/lab5__3.syr" 
+xst -intstyle ise -ifn "D:/ISE Project/lab5_3/lab5__3.xst" -ofn "D:/ISE Project/lab5_3/lab5__3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab5_3_imple.ucf -p xc6slx9-tqg144-3 "lab5__3.ngc" lab5__3.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab5_3_imple.ucf -p xc6slx9-tqg144-3 "lab5__3.ngc" lab5__3.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab5__3_map.ncd lab5__3.ngd lab5__3.pcf 
+par -w -intstyle ise -ol high -mt off lab5__3_map.ncd lab5__3.ncd lab5__3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab5__3.twx lab5__3.ncd -o lab5__3.twr lab5__3.pcf -ucf lab5_3_imple.ucf 
+bitgen -intstyle ise -f lab5__3.ut lab5__3.ncd 
+xst -intstyle ise -ifn "D:/ISE Project/lab5_3/lab5__3.xst" -ofn "D:/ISE Project/lab5_3/lab5__3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab5_3_imple.ucf -p xc6slx9-tqg144-3 "lab5__3.ngc" lab5__3.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab5__3_map.ncd lab5__3.ngd lab5__3.pcf 
+par -w -intstyle ise -ol high -mt off lab5__3_map.ncd lab5__3.ncd lab5__3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab5__3.twx lab5__3.ncd -o lab5__3.twr lab5__3.pcf -ucf lab5_3_imple.ucf 
+bitgen -intstyle ise -f lab5__3.ut lab5__3.ncd 

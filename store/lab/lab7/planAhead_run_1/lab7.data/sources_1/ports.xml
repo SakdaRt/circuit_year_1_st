@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="DIPS5" Dir="IN"/>
+		<Port Id="D1" Dir="IN"/>
+		<Port Id="D2" Dir="IN"/>
+		<Port Id="D3" Dir="IN"/>
+		<Port Id="D4" Dir="IN"/>
+		<Port Id="PB1" Dir="IN"/>
+		<Port Id="A" Dir="OUT"/>
+		<Port Id="B" Dir="OUT"/>
+		<Port Id="C" Dir="OUT"/>
+		<Port Id="cm0" Dir="OUT"/>
+		<Port Id="cm1" Dir="OUT"/>
+		<Port Id="cm2" Dir="OUT"/>
+		<Port Id="cm3" Dir="OUT"/>
+		<Port Id="D" Dir="OUT"/>
+		<Port Id="E" Dir="OUT"/>
+		<Port Id="F" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

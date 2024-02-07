@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-09-23T13:57:25</DateModified>
-  <ModuleName>lab9_main</ModuleName>
+  <DateModified>2023-10-15T22:01:05</DateModified>
+  <ModuleName>counter0to9</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>E:/ISE project/lab9/iseconfig/counter0to9.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/ISE project/lab9</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/admin/Documents/GitHub/circuit_year_1_st/lab9/iseconfig/counter0to9.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/admin/Documents/GitHub/circuit_year_1_st/lab9\</ImplementationReportsDirectory>
   <DateInitialized>2023-09-23T13:57:24</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

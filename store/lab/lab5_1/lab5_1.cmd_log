@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "D:/ISE Project/lab5_1/lab5_1.xst" -ofn "D:/ISE Project/lab5_1/lab5_1.syr" 
+xst -intstyle ise -ifn "D:/ISE Project/lab5_1/lab5_1.xst" -ofn "D:/ISE Project/lab5_1/lab5_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab5_1_imple.ucf -p xc6slx9-tqg144-3 "lab5_1.ngc" lab5_1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab5_1_map.ncd lab5_1.ngd lab5_1.pcf 
+par -w -intstyle ise -ol high -mt off lab5_1_map.ncd lab5_1.ncd lab5_1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab5_1.twx lab5_1.ncd -o lab5_1.twr lab5_1.pcf -ucf lab5_1_imple.ucf 
+bitgen -intstyle ise -f lab5_1.ut lab5_1.ncd 
+bitgen -intstyle ise -f lab5_1.ut lab5_1.ncd 

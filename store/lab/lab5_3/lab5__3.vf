@@ -1,0 +1,47 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : lab5__3.vf
+// /___/   /\     Timestamp : 08/07/2023 18:59:37
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "D:/ISE Project/lab5_3/lab5__3.vf" -w "D:/ISE Project/lab5_3/lab5__3.sch"
+//Design Name: lab5__3
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module lab5__3(XLXN_1, 
+               XLXN_3, 
+               XLXN_5, 
+               XLXN_7, 
+               XLXN_9, 
+               XLXN_24);
+
+    input XLXN_1;
+    input XLXN_3;
+    input XLXN_5;
+    input XLXN_7;
+    input XLXN_9;
+   output XLXN_24;
+   
+   wire XLXN_23;
+   
+   XNOR5  XLXI_1 (.I0(XLXN_9), 
+                 .I1(XLXN_7), 
+                 .I2(XLXN_5), 
+                 .I3(XLXN_3), 
+                 .I4(XLXN_1), 
+                 .O(XLXN_23));
+   INV  XLXI_8 (.I(XLXN_23), 
+               .O(XLXN_24));
+endmodule

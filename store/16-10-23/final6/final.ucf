@@ -1,0 +1,12 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "P80" LOC = P80;
+NET "P81" LOC = P81;
+NET "P_67" LOC = P67;
+NET "P_74" LOC = P74;
+NET "P_75" LOC = P75;
+NET "P_78" LOC = P78;
+NET "P_79" LOC = P79;
+NET "P_82" LOC = P82;
+NET "XLXN_7" LOC = P123;

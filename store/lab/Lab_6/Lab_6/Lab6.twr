@@ -1,0 +1,124 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf pin.ucf -ucf
+Lab6.ucf
+
+Design file:              Lab6.ncd
+Physical constraint file: Lab6.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A1             |Ledcheck       |   10.463|
+A1             |a              |   11.110|
+A1             |b              |   10.701|
+A1             |c              |   10.790|
+A1             |d              |   10.634|
+A1             |e              |   10.930|
+A1             |f              |   10.736|
+A1             |g              |   11.090|
+A2             |Ledcheck       |   10.418|
+A2             |a              |   11.065|
+A2             |b              |   10.656|
+A2             |c              |   10.745|
+A2             |d              |   10.589|
+A2             |e              |   10.885|
+A2             |f              |   10.691|
+A2             |g              |   11.045|
+A3             |Ledcheck       |    9.698|
+A3             |a              |   10.345|
+A3             |b              |    9.936|
+A3             |c              |   10.025|
+A3             |d              |    9.869|
+A3             |e              |   10.165|
+A3             |f              |    9.971|
+A3             |g              |   10.325|
+A4             |Ledcheck       |    8.284|
+A4             |a              |    9.792|
+A4             |b              |    9.383|
+A4             |c              |    9.472|
+A4             |d              |    9.316|
+A4             |e              |    9.612|
+A4             |f              |    9.418|
+A4             |g              |    9.772|
+n_B1           |Ledcheck       |   11.089|
+n_B1           |a              |   11.736|
+n_B1           |b              |   11.327|
+n_B1           |c              |   11.416|
+n_B1           |d              |   11.260|
+n_B1           |e              |   11.556|
+n_B1           |f              |   11.362|
+n_B1           |g              |   11.716|
+n_B2           |Ledcheck       |   10.556|
+n_B2           |a              |   11.203|
+n_B2           |b              |   10.794|
+n_B2           |c              |   10.883|
+n_B2           |d              |   10.727|
+n_B2           |e              |   11.023|
+n_B2           |f              |   10.829|
+n_B2           |g              |   11.183|
+n_B3           |Ledcheck       |    9.909|
+n_B3           |a              |   10.556|
+n_B3           |b              |   10.147|
+n_B3           |c              |   10.236|
+n_B3           |d              |   10.080|
+n_B3           |e              |   10.376|
+n_B3           |f              |   10.182|
+n_B3           |g              |   10.536|
+n_B4           |Ledcheck       |    8.922|
+n_B4           |a              |   10.430|
+n_B4           |b              |   10.021|
+n_B4           |c              |   10.110|
+n_B4           |d              |    9.954|
+n_B4           |e              |   10.250|
+n_B4           |f              |   10.056|
+n_B4           |g              |   10.410|
+selecter1      |Ledcheck       |   13.642|
+selecter1      |a              |   14.289|
+selecter1      |b              |   13.880|
+selecter1      |c              |   13.969|
+selecter1      |d              |   13.813|
+selecter1      |e              |   14.109|
+selecter1      |f              |   13.915|
+selecter1      |g              |   14.269|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Aug 22 14:06:49 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4571 MB
+
+
+

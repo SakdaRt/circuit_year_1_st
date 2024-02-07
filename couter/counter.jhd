@@ -1,0 +1,3 @@
+MODULE counter
+	SUBMODULE counter0to9
+		INSTANCE XLXI_35

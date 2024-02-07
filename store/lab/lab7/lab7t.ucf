@@ -1,0 +1,16 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "A" LOC = P41;
+NET "B" LOC = P40;
+NET "C" LOC = P35;
+NET "cm0" LOC = P44;
+NET "cm1" LOC = P43;
+NET "cm2" LOC = P33;
+NET "cm3" LOC = P30;
+NET "D" LOC = P34;
+
+NET "DIPS5" LOC = P102;
+NET "E" LOC = P32;
+NET "F" LOC = P29;
+NET "PB1" LOC = P45;

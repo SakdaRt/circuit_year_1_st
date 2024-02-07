@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Mon Sep 18 23:19:55 2023
+# Process ID: 12500
+# Log file: C:/workforISE/Lab8/planAhead_run_3/planAhead.log
+# Journal file: C:/workforISE/Lab8/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/workforISE/Lab8/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P123 [get_ports Ck]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports common0]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports common1]
+endgroup
+set_property package_pin "" [get_ports [list  common2]]
+startgroup
+set_property package_pin P33 [get_ports common2]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports common3]
+endgroup
+set_property package_pin "" [get_ports [list  Dip2]]
+startgroup
+set_property package_pin P112 [get_ports Dip1]
+endgroup
+startgroup
+set_property package_pin P111 [get_ports Dip2]
+endgroup
+startgroup
+set_property package_pin P105 [get_ports Dip3]
+endgroup
+startgroup
+set_property package_pin P104 [get_ports Dip4]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports O_F]
+endgroup
+set_property package_pin "" [get_ports [list  Oa]]
+startgroup
+set_property package_pin P41 [get_ports Oa]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports Ob]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports Oc]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports Od]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports Oe]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports Og]
+endgroup
+save_constraints

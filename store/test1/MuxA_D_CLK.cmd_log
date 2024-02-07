@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym MuxA_D_CLK C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/test1/MuxA_D_CLK.sch C:/Users/admin/Documents/GitHub/circuit_year_1_st/store/test1/MuxA_D_CLK.sym 
